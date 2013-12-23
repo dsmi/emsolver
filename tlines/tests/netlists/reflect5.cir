@@ -1,0 +1,86 @@
+* Used to test values obtained from tlines calculator
+* The positive current direction through the current or voltage source is
+* from the positive (N1) node to the negative (N2) node.
+
+.option TUNING=VHIGH
+.option NUMDGT=6
+
+Rterm1 0 N1term 1.476824e-001
+Lterm1 N1term N1 6.771285e-009
+
+Vsrc1 N1 N1a AC 1
+
+W_X1 N=1 N1a 0 N2 0
++ RLGCmodel=X1_model L=1.000000e-003
+.MODEL X1_model W MODELTYPE=RLGC N=1
++ Ro=1.000000e+001
++ Lo=1.000000e-006
++ Go=5.000000e+002
++ Co=1.000000e-011
++ Rs=0
+
+Vtest2 N2 N2a AC 0
+
+W_X2 N=1 N2a 0 N3 0
++ RLGCmodel=X2_model L=4.000000e-003
+.MODEL X2_model W MODELTYPE=RLGC N=1
++ Ro=5.000000e+000
++ Lo=1.500000e-006
++ Go=4.000000e+002
++ Co=3.000000e-011
++ Rs=0
+
+Vtest3 N3 N3a AC 0
+
+W_X3 N=1 N3a 0 N4 0
++ RLGCmodel=X3_model L=4.000000e-004
+.MODEL X3_model W MODELTYPE=RLGC N=1
++ Ro=4.000000e+000
++ Lo=8.000000e-007
++ Go=5.000000e+001
++ Co=5.000000e-011
++ Rs=0
+
+Vtest4 N4 N4a AC 0
+
+W_X4 N=1 N4a 0 N5 0
++ RLGCmodel=X4_model L=2.000000e-003
+.MODEL X4_model W MODELTYPE=RLGC N=1
++ Ro=8.000000e+000
++ Lo=5.000000e-007
++ Go=1.000000e+002
++ Co=5.000000e-012
++ Rs=0
+
+Vtest5 N5 N5a AC 0
+
+W_X5 N=1 N5a 0 N6 0
++ RLGCmodel=X5_model L=6.000000e-003
+.MODEL X5_model W MODELTYPE=RLGC N=1
++ Ro=3.000000e+000
++ Lo=1.000000e-007
++ Go=2.000000e+002
++ Co=4.000000e-011
++ Rs=0
+
+* Open termination
+
+.ac list 1e6
+
+.defwave Y2=I(Vtest2)/V(N2)
+.defwave Y3=I(Vtest3)/V(N3)
+.defwave Y4=I(Vtest4)/V(N4)
+.defwave Y5=I(Vtest5)/V(N5)
+
+.print ac wr(Y2)
+.print ac wi(Y2)
+.print ac wr(Y3)
+.print ac wi(Y3)
+.print ac wr(Y4)
+.print ac wi(Y4)
+.print ac wr(Y5)
+.print ac wi(Y5)
+.print ac wr(Y6)
+.print ac wi(Y6)
+
+.end

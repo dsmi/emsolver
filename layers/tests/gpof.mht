@@ -1,0 +1,2147 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: 
+Date: Tue, 28 Apr 2009 00:35:33 +0400
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-9"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ee.bilkent.edu.tr/~microwave/programs/dspapp/gpof.htm
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3350
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns=3D"http://www.w3.org/TR/REC-html40" xmlns:v =3D=20
+"urn:schemas-microsoft-com:vml" xmlns:o =3D=20
+"urn:schemas-microsoft-com:office:office" xmlns:w =3D=20
+"urn:schemas-microsoft-com:office:word"><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-9">
+<META content=3DWord.Document name=3DProgId>
+<META content=3D"MSHTML 6.00.2900.3527" name=3DGENERATOR>
+<META content=3D"Microsoft Word 9" name=3DOriginator><LINK=20
+href=3D"./gpof_files/filelist.xml" rel=3DFile-List><LINK=20
+href=3D"./gpof_files/editdata.mso" rel=3DEdit-Time-Data><LINK=20
+href=3D"./gpof_files/oledata.mso" rel=3DOLE-Object-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>burak dindaroglu</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>burak dindaroglu</o:LastAuthor>
+  <o:Revision>10</o:Revision>
+  <o:TotalTime>71</o:TotalTime>
+  <o:Created>2001-07-29T21:18:00Z</o:Created>
+  <o:LastSaved>2001-07-30T05:45:00Z</o:LastSaved>
+  <o:Pages>17</o:Pages>
+  <o:Words>1927</o:Words>
+  <o:Characters>10984</o:Characters>
+  <o:Company>bilkent</o:Company>
+  <o:Lines>91</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>13489</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<STYLE>@page Section1 {size: 8.5in 11.0in; margin: 1.0in 1.25in 1.0in =
+1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; =
+mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; LINE-HEIGHT: =
+200%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; =
+mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: =
+1; mso-bidi-font-size: 10.0pt; mso-font-kerning: 0pt; mso-ansi-language: =
+TR
+}
+P.MsoBodyText {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; LINE-HEIGHT: 200%; FONT-FAMILY: =
+"Times New Roman"; TEXT-ALIGN: justify; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; =
+mso-ansi-language: TR
+}
+LI.MsoBodyText {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; LINE-HEIGHT: 200%; FONT-FAMILY: =
+"Times New Roman"; TEXT-ALIGN: justify; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; =
+mso-ansi-language: TR
+}
+DIV.MsoBodyText {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; LINE-HEIGHT: 200%; FONT-FAMILY: =
+"Times New Roman"; TEXT-ALIGN: justify; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; =
+mso-ansi-language: TR
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1044"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=3DEN-US style=3D"tab-interval: .5in">
+<DIV class=3DSection1>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal">Prony&#8217;s =
+Method<o:p></o:p></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></B>N complex data samples x [1], x [2] &#8230; x [N]</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The Prony=20
+Method will estimate x [N] with p-term exponential model.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte vml =
+1]><v:shapetype=20
+id=3D_x0000_t75 coordsize =3D "21600,21600" o:preferrelative =3D "t" =
+o:spt =3D "75"=20
+filled =3D "f" stroked =3D "f" path =3D " m@4@5 l@4@11@9@11@9@5 =
+xe"><v:stroke=20
+joinstyle =3D "miter"></v:stroke><v:formulas><v:f eqn =3D=20
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn =3D "sum @0 1 0 =
+"></v:f><v:f eqn =3D=20
+"sum 0 0 @1 "></v:f><v:f eqn =3D "prod @2 1 2 "></v:f><v:f eqn =3D=20
+"prod @3 21600 pixelWidth "></v:f><v:f eqn =3D=20
+"prod @3 21600 pixelHeight "></v:f><v:f eqn =3D "sum @0 0 1 "></v:f><v:f =
+eqn =3D=20
+"prod @6 1 2 "></v:f><v:f eqn =3D "prod @7 21600 pixelWidth "></v:f><v:f =
+eqn =3D=20
+"sum @8 21600 0 "></v:f><v:f eqn =3D "prod @7 21600 pixelHeight =
+"></v:f><v:f eqn =3D=20
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok =3D "f"=20
+gradientshapeok =3D "t" o:connecttype =3D "rect"></v:path><o:lock =
+aspectratio=3D"t"=20
+v:ext=3D"edit"></o:lock></v:shapetype><v:shape id=3D_x0000_i1025=20
+style=3D"WIDTH: 252pt; HEIGHT: 36.75pt" o:ole=3D"" type =3D =
+"#_x0000_t75" coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image001.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D336 height=3D49
+src=3D"./gpof_files/image002.gif" =
+v:shapes=3D"_x0000_i1025"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1025"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987960">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(1)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">for 1 &#8804; n &#8804; N,=20
+where T is the sample interval in seconds, A<SUB>k</SUB> is the =
+amplitude of the=20
+complex exponential, &#945;<SUB>k</SUB> is the damping factor.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">In =
+real data=20
+samples,</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1026 style=3D"WIDTH: 284.25pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image003.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D379 height=3D49
+src=3D"./gpof_files/image004.gif" =
+v:shapes=3D"_x0000_i1026"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1026"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987961">
+ </o:OLEObject>
+</xml><![endif]--><SPAN style=3D"mso-tab-count: 1"></SPAN>(2)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal">Original Prony =
+Concept<o:p></o:p></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1027 style=3D"WIDTH: 89.25pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image005.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D119 height=3D49
+src=3D"./gpof_files/image006.gif" =
+v:shapes=3D"_x0000_i1027"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1027"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987962">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(3)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">We =
+used=20
+exactly 2p complex samples x [1], x [2], &#8230; x [p] to model 2p =
+complex parameters=20
+h<SUB>1</SUB>, h<SUB>2</SUB>, h<SUB>3</SUB> &#8230; h<SUB>p</SUB>; =
+z<SUB>1</SUB>,=20
+z<SUB>2</SUB>, z<SUB>3</SUB> &#8230; z<SUB>p</SUB>.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -37.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1028 style=3D"WIDTH: 110.25pt; HEIGHT: 80.25pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image007.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D147 height=3D107
+src=3D"./gpof_files/image008.gif" =
+v:shapes=3D"_x0000_i1028"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1028"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987963">
+ </o:OLEObject>
+</xml><![endif]--><SPAN style=3D"mso-spacerun: yes">&nbsp;</SPAN>* <SPAN =
+
+style=3D"mso-text-raise: -35.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1029=20
+style=3D"WIDTH: 18pt; HEIGHT: 75.75pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image009.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D24 height=3D101
+src=3D"./gpof_files/image010.gif" =
+v:shapes=3D"_x0000_i1029"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1029"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987964">
+ </o:OLEObject>
+</xml><![endif]--><SPAN style=3D"mso-spacerun: yes">&nbsp;</SPAN>=3D =
+<SPAN=20
+style=3D"mso-text-raise: -32.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1030=20
+style=3D"WIDTH: 24pt; HEIGHT: 69.75pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image011.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D32 height=3D93
+src=3D"./gpof_files/image012.gif" =
+v:shapes=3D"_x0000_i1030"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1030"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987965">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+=20
+</SPAN>(4)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">If =
+we obtain a=20
+method to determine the z elements separately, the eq. (4) represents a =
+set of=20
+linear simultaneous equations that can be solved for the unknown vector =
+of=20
+complex amplitudes. Prony&#8217;s contribution was the discovery of such =
+a method.=20
+</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">In =
+order to=20
+find the form of this difference equation, first define the polynomial =
+=D8 (z)=20
+that has the z<SUB>k</SUB> exponents as its roots,</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>=D8 (z) =3D <SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte =
+vml 1]><v:shape=20
+id=3D_x0000_i1031 style=3D"WIDTH: 54.75pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image013.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D73 height=3D49
+src=3D"./gpof_files/image014.gif" =
+v:shapes=3D"_x0000_i1031"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1031"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987966">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(5)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">If =
+the=20
+products of eq. (5) are expanded into a power series, then the =
+polynomial may be=20
+represented as </P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>=D8 (z) =3D <SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte =
+vml 1]><v:shape=20
+id=3D_x0000_i1032 style=3D"WIDTH: 69.75pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image015.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D93 height=3D49
+src=3D"./gpof_files/image016.gif" =
+v:shapes=3D"_x0000_i1032"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1032"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987967">
+ </o:OLEObject>
+</xml><![endif]-->=3D a [0]z<SUP>p</SUP> + a[1]z<SUP>p-1</SUP> + &#8230; =
++=20
+a[p]z<SUP>0</SUP><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(6)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">with complex=20
+coefficients a [m] such that a [0] =3D 1. Shifting the index on eq. (3) =
+from n to=20
+n-m and multiplying by the parameter a [m] yields</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>a [m]x[n-m] =3D <SPAN=20
+style=3D"mso-text-raise: -16.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1033=20
+style=3D"WIDTH: 93pt; HEIGHT: 36.75pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image017.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D124 height=3D49
+src=3D"./gpof_files/image018.gif" =
+v:shapes=3D"_x0000_i1033"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1033"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987968">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(7)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">Forming=20
+similar products a [0] x [n], &#8230; a [m-1]x [n-m+1] and summing =
+produces</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1034 style=3D"WIDTH: 198pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image019.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D264 height=3D49
+src=3D"./gpof_files/image020.gif" =
+v:shapes=3D"_x0000_i1034"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1034"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987969">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(8a)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -16.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1035 style=3D"WIDTH: 251.25pt; HEIGHT: 36.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image021.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D335 height=3D49
+src=3D"./gpof_files/image022.gif" =
+v:shapes=3D"_x0000_i1035"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1035"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987970">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>p+1 &#8804; n &#8804; 2p<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN>(8b) </P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The right-hand=20
+sight of summation in eq. (8b) may be recognized as the polynomial =
+defined by=20
+eq. (6), evaluated at each of roots z<SUB>i</SUB>, yielding the zero =
+result=20
+indicated. Equation (8b) is the linear difference equation whose =
+homogeneous=20
+solution is given by eq. (3). The polynomial is the <I=20
+style=3D"mso-bidi-font-style: normal">characteristic</I> equation =
+associated with=20
+this linear difference equation.</P>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 0.5in; LINE-HEIGHT: 200%; TEXT-ALIGN: justify">a =
+[1]x [p] +=20
+a [2]x [p-1] + &#8230; + a [p]x[1] =3D -x[p+1]<SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(8c)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The p=20
+equations representing the valid values of a[n] that satisfy eq. (8b) =
+may be=20
+expressed as the pxp matrix equation</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-text-raise: -32.0pt"><!--[if gte vml =
+1]><v:shape=20
+id=3D_x0000_i1036 style=3D"WIDTH: 153pt; HEIGHT: 69.75pt" o:ole=3D"" =
+type =3D=20
+"#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata o:title=3D"" src =
+=3D=20
+"./gpof_files/image023.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D204 height=3D93
+src=3D"./gpof_files/image024.gif" =
+v:shapes=3D"_x0000_i1036"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1036"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987971">
+ </o:OLEObject>
+</xml><![endif]--><SPAN style=3D"mso-spacerun: yes">&nbsp;</SPAN>* <SPAN =
+
+style=3D"mso-text-raise: -32.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1037=20
+style=3D"WIDTH: 26.25pt; HEIGHT: 69.75pt" o:ole=3D"" type =3D =
+"#_x0000_t75" coordsize=20
+=3D "21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image025.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D35 height=3D93
+src=3D"./gpof_files/image026.gif" =
+v:shapes=3D"_x0000_i1037"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1037"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987972">
+ </o:OLEObject>
+</xml><![endif]--><SPAN style=3D"mso-spacerun: yes">&nbsp;</SPAN>=3D =
+<SPAN=20
+style=3D"mso-text-raise: -32.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1038=20
+style=3D"WIDTH: 42pt; HEIGHT: 69.75pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image027.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D56 height=3D93
+src=3D"./gpof_files/image028.gif" =
+v:shapes=3D"_x0000_i1038"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1038"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987973">
+ </o:OLEObject>
+</xml><![endif]--><SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;=20
+</SPAN>(9)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The damping=20
+&#945;<SUB>i</SUB> and sinusoidal frequency f<SUB>i</SUB> may be =
+determined from the=20
+root z<SUB>i</SUB> using the relationship.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>&#945;<SUB><SPAN lang=3DFR style=3D"mso-ansi-language: FR">i =
+</SPAN></SUB><SPAN=20
+lang=3DFR style=3D"mso-ansi-language: FR">=3D In |z<SUB>i</SUB>| / =
+T<SPAN=20
+style=3D"mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>sec<SUP>-1<SPAN=20
+style=3D"mso-tab-count: =
+6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;=20
+</SPAN></SUP>(10)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>f<SUB>i</SUB> =3D tan<SUP>-1</SUP> [Im{z<SUB>i</SUB>} / Re=20
+{z<SUB>i</SUB>}]<SPAN=20
+style=3D"mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Hz<SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(11)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The Prony=20
+procedure to fit p exponentials to 2p complex data samples may be now be =
+
+summarized in three steps. First solution of equation (9) for the =
+polynomial=20
+coefficients is obtained. Second, the roots of the polynomial defined by =
+eq. (6)=20
+are calculated. The damping &#945;<SUB>i</SUB> and sinusoidal frequency =
+f<SUB>i</SUB>=20
+may be determined from the roots using the relationship (10) and (11). =
+At the=20
+third step, we used the computed roots to construct the matrix elements =
+of eq.=20
+(4). The amplitude A<SUB>i</SUB> and the initial phase =
+&#952;<SUB>i</SUB> may be=20
+determined from each h<SUB>i</SUB> parameter with the relationships</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>A<SUB>i</SUB> =3D |h<SUB>i</SUB>|<SPAN=20
+style=3D"mso-tab-count: =
+7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(12a)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>&#952;<SUB>i </SUB><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;</SPAN>=3D=20
+tan<SUP>-1</SUP> [Im {h<SUB>i</SUB>} / Re {h<SUB>i</SUB>}] radians<SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(12b)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal">Matrix Pencil =
+Method<o:p></o:p></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></B>In general, the signal model of the observed late time of=20
+electromagnetic-scattered-energy response from an object can be =
+represented as=20
+</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN lang=3DFR style=3D"mso-ansi-language: FR">y (t) =3D x (t) + =
+</SPAN>&#949;<SPAN=20
+lang=3DFR style=3D"mso-ansi-language: FR"> (t) &#8776; </SPAN><SPAN=20
+style=3D"mso-text-raise: -16.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1039=20
+style=3D"WIDTH: 23.25pt; HEIGHT: 36pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image029.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D31 height=3D48
+src=3D"./gpof_files/image030.gif" =
+v:shapes=3D"_x0000_i1039"><![endif]></SPAN><SPAN=20
+lang=3DFR style=3D"mso-ansi-language: FR"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1039"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987974">
+ </o:OLEObject>
+</xml><![endif]-->R<SUB>i</SUB> e<SUP>si t</SUP> + </SPAN>&#949;<SPAN =
+lang=3DFR=20
+style=3D"mso-ansi-language: FR"> (t) 0 &#8804; t &#8804; T<SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(1)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">y (t) : observed time=20
+response<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">&#949;<SPAN=20
+style=3D"mso-ansi-language: FR"> <SPAN lang=3DFR>(t) : noise in the=20
+system<o:p></o:p></SPAN></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">x (t) : signal<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">R<SUB>i</SUB> : residues or complex=20
+amplitudes<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">s<SUB>i</SUB> =3D =
+-</SPAN>&#945;<SUB><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">i</SPAN></SUB><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR"> + j w<SUB>i</SUB><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">&#945;<SUB> </SUB>:=20
+damping factor</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">w<SUB>i</SUB>=20
+: angular frequencies (w<SUB>i</SUB> =3D 2&#928;f<SUB>i</SUB>)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">After sampling=20
+the time variable, t, is replaced by kT<SUB>s</SUB> where T<SUB>s</SUB> =
+is the=20
+sampling period. The sequence can be written as</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>y (kT<SUB>s</SUB>) =3D x (kT<SUB>s</SUB>) + &#949; =
+(kT<SUB>s</SUB>) &#8776; <SPAN=20
+style=3D"mso-text-raise: -16.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1040=20
+style=3D"WIDTH: 23.25pt; HEIGHT: 36pt" o:ole=3D"" type =3D "#_x0000_t75" =
+coordsize =3D=20
+"21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image029.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D31 height=3D48
+src=3D"./gpof_files/image031.gif" =
+v:shapes=3D"_x0000_i1040"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1040"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987975">
+ </o:OLEObject>
+</xml><![endif]-->R<SUB>i</SUB> z<SUP>k</SUP><SUB>i</SUB> + &#949;=20
+(kT<SUB>s</SUB>)<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>for k =
+=3D 0, &#8230; ,=20
+N-1<SPAN style=3D"mso-tab-count: 1">&nbsp;&nbsp; </SPAN>(2a)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">And</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Z<SUB>i</SUB> =3D exp(s<SUB>i</SUB>T<SUB>s</SUB>) =3D =
+exp(-&#945;<SUB>i</SUB> + j=20
+w<SUB>i</SUB>)T<SUB>s</SUB> for I =3D 1,2, &#8230; ,M<SPAN=20
+style=3D"mso-tab-count: =
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(2b)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">The target is=20
+to find the best estimates of M, R<SUB>i</SUB>&#8217;s and =
+z<SUB>i</SUB>s from the=20
+noise-contaminated data, y(kT<SUB>s</SUB>). In general, simultaneous =
+estimation=20
+of M, R<SUB>i</SUB>&#8217;s and z<SUB>i</SUB>s is a nonlinear =
+problem.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">Pencil term=20
+arises when combining two functions defined on a common interval, with =
+scalar=20
+parameter, &#955;:</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN lang=3DFR style=3D"mso-ansi-language: FR">f(t, =
+</SPAN>&#955;<SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">) =3D g(t) + </SPAN>&#955;<SPAN =
+lang=3DFR=20
+style=3D"mso-ansi-language: FR">h(t)<SPAN=20
+style=3D"mso-tab-count: =
+7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(3)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">f(t, &#955;) is=20
+called a pencil of functions g (t) and h(t), parameterized by &#955;. To =
+avoid=20
+obvious triviality, g(t) is not permitted to be scalar multiple of =
+h(t).</P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal><B style=3D"mso-bidi-font-weight: =
+normal">Generalized Pencil of=20
+Function Method <o:p></o:p></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">Assume that samples of =
+any signal=20
+(y<SUB>k</SUB>) can be described by:</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><!--[if gte vml 1]><o:wrapblock><v:shape=20
+id=3D_x0000_s1032=20
+style=3D"MARGIN-TOP: 0px; Z-INDEX: 1; LEFT: 0px; MARGIN-LEFT: 167.55pt; =
+WIDTH: 172pt; POSITION: absolute; HEIGHT: 28pt; TEXT-ALIGN: left; =
+mso-position-horizontal: absolute; mso-position-horizontal-relative: =
+text; mso-position-vertical: top; mso-position-vertical-relative: text"=20
+type =3D "#_x0000_t75" coordsize =3D "21600,21600"><v:imagedata =
+o:title=3D"" src =3D=20
+"./gpof_files/image032.wmz"></v:imagedata><w:wrap anchorx=3D"page" type =
+=3D=20
+"topandbottom"></w:wrap></v:shape><![if gte mso 9]><o:OLEObject =
+Type=3D"Embed" ProgID=3D"Equation.3"
+  ShapeID=3D"_x0000_s1032" DrawAspect=3D"Content" =
+ObjectID=3D"_1057987976">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style=3D'mso-ignore:vglayout'>
+ <table cellpadding=3D0 cellspacing=3D0 align=3Dleft>
+  <tr>
+   <td width=3D223 height=3D0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=3D230 height=3D37 src=3D"./gpof_files/image033.gif" =
+v:shapes=3D"_x0000_s1032"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><BR=20
+style=3D"mso-ignore: vglayout" clear=3Dall><![if =
+!supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></P><BR=20
+style=3D"mso-ignore: vglayout" clear=3Dall>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">Where k=3D0,1,=20
+... , N-1, b<SUB>i </SUB>are the complex residues, s<SUB>i </SUB>are the =
+complex=20
+poles, and <SPAN=20
+style=3D"FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; =
+mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; =
+mso-symbol-font-family: Symbol"><SPAN=20
+style=3D"mso-char-type: symbol; mso-symbol-font-family: =
+Symbol">d</SPAN></SPAN>t=20
+is the sampling interval. For notational brevity, we can let z<SUB>i =
+</SUB>=3D=20
+exp(s<SUB>i</SUB><SPAN=20
+style=3D"FONT-FAMILY: Symbol; mso-ascii-font-family: 'Times New Roman'; =
+mso-hansi-font-family: 'Times New Roman'; mso-char-type: symbol; =
+mso-symbol-font-family: Symbol"><SPAN=20
+style=3D"mso-char-type: symbol; mso-symbol-font-family: =
+Symbol">d</SPAN></SPAN>t)=20
+which are the poles in the Z plane. It is clear that b<SUB>i </SUB>and =
+s<SUB>i=20
+</SUB>should respectively be in complex conjugate pairs for real values =
+of=20
+y<SUB>k </SUB>.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">Following the=20
+idea of the pencil-function method, we consider the following set of =
+information=20
+vectors :</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center" =
+align=3Dcenter><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">y<SUB>0</SUB>,<SUB> =
+</SUB>y<SUB>1</SUB>,<SUB>=20
+</SUB>y<SUB>2</SUB>,..., y<SUB>L </SUB><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;</SPAN></SPAN></B><SPAN=20
+lang=3DFR style=3D"mso-ansi-language: FR">(2)<B=20
+style=3D"mso-bidi-font-weight: normal"><o:p></o:p></B></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">where </P>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><B style=3D"mso-bidi-font-weight: normal">y<SUB>i =
+</SUB></B>=3D=20
+[y<SUB>i </SUB>, y<SUB>i+1 </SUB>,..., y<SUB>i+N-L</SUB>] <SUP>T =
+</SUP><B=20
+style=3D"mso-bidi-font-weight: normal"><SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</=
+SPAN><SPAN=20
+style=3D"mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN></B>(3)<B=20
+style=3D"mso-bidi-font-weight: normal"><o:p></o:p></B></P>
+<H1><SPAN lang=3DTR>The superscript T denotes the transpose of a =
+matr=FDx. Based on=20
+these vectors, we define the matrices Y<SUB>1 </SUB>and Y<SUB>2 </SUB>as =
+
+follows:</SPAN></H1>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR">Y<SUB>1<B =
+
+style=3D"mso-bidi-font-weight: normal"> </B></SUB>=3D [<B=20
+style=3D"mso-bidi-font-weight: normal">y<SUB>o </SUB></B>, <B=20
+style=3D"mso-bidi-font-weight: normal">y<SUB>1</SUB></B><SUB> =
+</SUB>,...,<B=20
+style=3D"mso-bidi-font-weight: normal"> y<SUB>L-1</SUB></B>] <SUP><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUP><B=20
+style=3D"mso-bidi-font-weight: normal"><SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUB><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;</SPAN></B>(4)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR">Y<SUB>2<B =
+
+style=3D"mso-bidi-font-weight: normal"> </B></SUB>=3D [<B=20
+style=3D"mso-bidi-font-weight: normal">y<SUB>1 </SUB></B>, <B=20
+style=3D"mso-bidi-font-weight: normal">y<SUB>2</SUB></B><SUB> =
+</SUB>,...,<B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>y<SUB>L</SUB></B>] =
+<SUP><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUP><B=20
+style=3D"mso-bidi-font-weight: normal"><SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUB><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;</SPAN></B>(5)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: justify">To =
+look into=20
+the underlying structure of the two matrices, one can write</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR">Y<SUB>1 =
+</SUB>=3D Z<SUB>1=20
+</SUB>B Z<SUB>2 </SUB><SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;=20
+</SPAN>(6)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR">Z<SUB>1 =
+</SUB>=3D Z<SUB>1=20
+</SUB>B Z<SUB>0</SUB>Z<SUB>2</SUB><SPAN=20
+style=3D"mso-tab-count: =
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;=20
+</SPAN>(7)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">where</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><!--[if gte vml 1]><o:wrapblock><v:shape=20
+id=3D_x0000_s1033=20
+style=3D"MARGIN-TOP: 10.45pt; Z-INDEX: 2; LEFT: 0px; MARGIN-LEFT: =
+123.55pt; WIDTH: 211.95pt; POSITION: absolute; HEIGHT: 1in; TEXT-ALIGN: =
+left; mso-position-horizontal-relative: text; =
+mso-position-vertical-relative: text"=20
+type =3D "#_x0000_t75" coordsize =3D "21600,21600" o:allowincell =3D =
+"f"><v:imagedata=20
+o:title=3D"" src =3D "./gpof_files/image034.wmz"></v:imagedata><w:wrap=20
+anchorx=3D"page" type =3D "topandbottom"></w:wrap></v:shape><![if gte =
+mso 9]><o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3"
+  ShapeID=3D"_x0000_s1033" DrawAspect=3D"Content" =
+ObjectID=3D"_1057987977">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style=3D'mso-ignore:vglayout'>
+ <table cellpadding=3D0 cellspacing=3D0 align=3Dleft>
+  <tr>
+   <td width=3D165 height=3D0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=3D282 height=3D96 src=3D"./gpof_files/image035.gif" =
+v:shapes=3D"_x0000_s1033"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><BR=20
+style=3D"mso-ignore: vglayout" clear=3Dall><![if =
+!supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P><BR=20
+style=3D"mso-ignore: vglayout" clear=3Dall>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><!--[if gte vml 1]><o:wrapblock><v:shape=20
+id=3D_x0000_s1034=20
+style=3D"MARGIN-TOP: -6.05pt; Z-INDEX: 3; LEFT: 0px; MARGIN-LEFT: =
+123.55pt; WIDTH: 220pt; POSITION: absolute; HEIGHT: 56pt; TEXT-ALIGN: =
+left; mso-position-horizontal-relative: text; =
+mso-position-vertical-relative: text"=20
+type =3D "#_x0000_t75" coordsize =3D "21600,21600" o:allowincell =3D =
+"f"><v:imagedata=20
+o:title=3D"" src =3D "./gpof_files/image036.wmz"></v:imagedata><w:wrap=20
+anchorx=3D"page" type =3D "topandbottom"></w:wrap></v:shape><![if gte =
+mso 9]><o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3"
+  ShapeID=3D"_x0000_s1034" DrawAspect=3D"Content" =
+ObjectID=3D"_1057987978">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style=3D'mso-ignore:vglayout'>
+ <table cellpadding=3D0 cellspacing=3D0>
+  <tr>
+   <td width=3D165 height=3D0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=3D293 height=3D75 src=3D"./gpof_files/image037.gif" =
+v:shapes=3D"_x0000_s1034"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><BR=20
+style=3D"mso-ignore: vglayout" clear=3Dall><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><o:p></o:p></B></P>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-tab-count: =
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></B>Z<SUB>0 </SUB><B style=3D"mso-bidi-font-weight: normal">=3D=20
+</B>diag(z<SUB>1 </SUB>, z<SUB>2 </SUB>, ... , z<SUB>M</SUB>)<SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(10)</P>
+<P class=3DMsoNormal=20
+style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: 200%; TEXT-ALIGN: justify"><B =
+
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"mso-tab-count: =
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></B>B<SUB> </SUB><B style=3D"mso-bidi-font-weight: normal">=3D=20
+</B>diag(b<SUB>1 </SUB>, b<SUB>2 </SUB>, ... , b<SUB>M</SUB>)<SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(11)</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify">Based on the=20
+above decomposition of Y<SUB>1 </SUB>and Y<SUB>2 </SUB>, one can show =
+that if=20
+M&lt;L&lt;N-M the poles {z<SUB>i </SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>; i =3D1,...,M} are the eigen =
+values of the=20
+matrix pencil Y<SUB>2<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN></SUB>- z=20
+Y<SUB>1 </SUB>. To develop and illustrate the use of an algorithm for =
+computing=20
+the generalized eigen values of the matrix-pencil problem we can =
+write</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR">Y<SUB>1 =
+</SUB><SUP>+=20
+</SUP>Y<SUB>2 </SUB>=3D Z<SUB>2 </SUB><SUP>+ </SUP>B<SUB> =
+</SUB><SUP>&#8211;1</SUP>=20
+Z<SUB>1 </SUB><SUP>+ </SUP>Z<SUB>1 </SUB>B=20
+Z<SUB>0</SUB>Z<SUB>2</SUB><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SPAN lang=3DFR style=3D"mso-ansi-language: FR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN>=3D Z<SUB>2 </SUB><SUP>+</SUP> =
+Z<SUB>0</SUB>Z<SUB>2</SUB><SPAN=20
+style=3D"mso-tab-count: =
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(12)</P>
+<P class=3DMsoBodyText><SPAN lang=3DTR>where the superscript + denotes =
+the=20
+Moore-Penrose pseudo-inversewhereas we use &#8211;1 for the regular =
+inverse. It can be=20
+seen from (12) that there exist vectors {<B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i</SUB></B><SUB> =
+</SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>; i =3D1,...,M} such =
+that</SPAN></P>
+<P class=3DMsoBodyText style=3D"TEXT-ALIGN: center" align=3Dcenter><SPAN =
+
+lang=3DTR>Y<SUB>1 </SUB><SUP>+</SUP> Y<SUB>1</SUB> <B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i</SUB></B><SUB> </SUB>=3D =
+<B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i </SUB><SPAN=20
+style=3D"mso-tab-count: 1">&nbsp; </SPAN></B><SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(13)</SPAN></P>
+<P class=3DMsoBodyText><SPAN lang=3DTR>and<SUB> </SUB></SPAN></P>
+<P class=3DMsoBodyText style=3D"TEXT-ALIGN: center" align=3Dcenter><SPAN =
+
+lang=3DTR>Y<SUB>1 </SUB><SUP>+</SUP> Y<SUB>2</SUB> <B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i </SUB></B>=3D =
+z<SUB>i</SUB> <B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i </SUB></B><SPAN=20
+style=3D"mso-tab-count: =
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(14)</SPAN></P>
+<P class=3DMsoBodyText><SPAN lang=3DTR>The <B=20
+style=3D"mso-bidi-font-weight: normal">p<SUB>i </SUB></B>are called the=20
+generalized eigen vectors of Y<SUB>2<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+</SPAN></SUB>- z Y<SUB>1.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN></SUB>To=20
+compute the pseudo-inverse Y<SUB>1 </SUB><SUP>+ </SUP>one can use the =
+singular=20
+value decomposition (SVD) of Y<SUB>1 </SUB><SUP><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUP>as follows:</SPAN></P>
+<P class=3DMsoBodyText><SPAN lang=3DTR><SPAN=20
+style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN=20
+style=3D"mso-text-raise: -15.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1044=20
+style=3D"WIDTH: 300pt; HEIGHT: 32.25pt" o:ole=3D"" type =3D =
+"#_x0000_t75" coordsize =3D=20
+"21600,21600"> <v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image038.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D400 height=3D43
+src=3D"./gpof_files/image039.gif" =
+v:shapes=3D"_x0000_i1044"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1044"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987979">
+ </o:OLEObject>
+</xml><![endif]--></SPAN></P>
+<P class=3DMsoBodyText style=3D"TEXT-ALIGN: center" align=3Dcenter><SPAN =
+lang=3DTR><SPAN=20
+style=3D"mso-text-raise: -5.0pt"><!--[if gte vml 1]><v:shape =
+id=3D_x0000_i1046=20
+style=3D"WIDTH: 236.25pt; HEIGHT: 22.5pt" o:ole=3D"" type =3D =
+"#_x0000_t75" coordsize=20
+=3D "21600,21600"><v:imagedata o:title=3D"" src =3D=20
+"./gpof_files/image040.wmz"></v:imagedata></v:shape><![endif]--><![if =
+!vml]><img width=3D315 height=3D30
+src=3D"./gpof_files/image041.gif" =
+v:shapes=3D"_x0000_i1046"><![endif]></SPAN><!--[if gte mso 9]><xml>
+ <o:OLEObject Type=3D"Embed" ProgID=3D"Equation.3" =
+ShapeID=3D"_x0000_i1046"
+  DrawAspect=3D"Content" ObjectID=3D"_1057987980">
+ </o:OLEObject>
+</xml><![endif]--></SPAN></P>
+<P class=3DMsoBodyText><SPAN lang=3DTR>where U<B=20
+style=3D"mso-bidi-font-weight: normal"><SUB> </SUB></B>=3D [u<SUB>1 =
+</SUB>, u<SUB>2=20
+</SUB>,..., u<SUB>M</SUB>] , V<B style=3D"mso-bidi-font-weight: =
+normal"><SUB>=20
+</SUB></B>=3D [v<SUB>1 </SUB>, v<SUB>2 </SUB>,..., v<SUB>M</SUB>] and =
+D<SUB>=20
+</SUB><B style=3D"mso-bidi-font-weight: normal">=3D </B>diag(d<SUB>1 =
+</SUB>, d<SUB>2=20
+</SUB>, ... , d<SUB>M</SUB>). The superscript H denotes the conjugate =
+trasnpose=20
+of a matrix. U and V are matrices of left and right singular vectors,=20
+respectively. Note that for noisy data or to decide how many =
+exponentials are to=20
+be used in the algorithm one should choose d<SUB>1 </SUB>, d<SUB>2 =
+</SUB>, ... ,=20
+d<SUB>M </SUB>to be the M largest singular values of Y<SUB>1 </SUB>and =
+the=20
+resulting Y<SUB>1 </SUB><SUP>+ </SUP>is called the truncated =
+pseudo-inverse of=20
+Y<SUB>1 </SUB>. Since Y<SUB>1 </SUB><SUP>+</SUP> Y<SUB>1 </SUB>=3D =
+V</SPAN><SPAN=20
+lang=3DTR style=3D"mso-ansi-language: EN-US"> </SPAN><SPAN=20
+style=3D"mso-ansi-language: EN-US">V<SUB> </SUB><SUP>H =
+</SUP></SPAN><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN><SPAN lang=3DTR>and =
+</SPAN><SPAN=20
+style=3D"mso-ansi-language: EN-US">V<SUB> </SUB><SUP>H =
+</SUP></SPAN><SPAN=20
+lang=3DTR>V=3DI substuting eq(15) into eq(13) and left-multiplying (13) =
+by=20
+</SPAN><SPAN style=3D"mso-ansi-language: EN-US">V<SUB> </SUB><SUP>H=20
+</SUP></SPAN><SPAN lang=3DTR>yiels the following matrix </SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: center"=20
+align=3Dcenter><SUB><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SPAN></SUB><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">Z=3D D<SUB> </SUB><SUP>-1 </SUP>U<SUB>=20
+</SUB><SUP>H</SUP> Y<SUB>2 </SUB>V<SPAN=20
+style=3D"mso-tab-count: =
+5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>(17)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">Note that Z is an M*M =
+matrix and=20
+z<SUB>i </SUB>are eigen values of this matrix. So the GPOF method is =
+finished as=20
+form the matrix Y<SUB>1 </SUB>by the definitions given above. Then =
+select number=20
+of exponentials to be fit to the data (M) by using singular value =
+decomposition=20
+and then form the matrix Z and the eigen values gives us z<SUB>i .=20
+<o:p></o:p></SUB></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUB>One more hint is that if =
+L is=20
+chosen to be equal to M, then GPOF method is equivalent to least-square =
+prony=20
+method.</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SUB><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN></SUB>I think at this point it =
+will be=20
+very useful to introduce you two Matlab codes. One of them implements a =
+modified=20
+version of the prony method while the other one implements the GPOF =
+algorithm=20
+:</P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">function=20
+[s,R]=3Dgpof(y,Ts)<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">%GPOF MEthod.Ts =
+represents the=20
+sampling period<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">%N repseresnt number of =
+
+samples<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">N=3Dlength(y);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">L=3Dfix(N/2);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">for =
+j=3D1:L+1<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>for =
+i=3D1:N-L,<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Y(i,j)=3Dy(i+j-1);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>end<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">end<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: =
+FR">Y1=3DY(1:N-L-1,1:L+1);Y2=3DY(2:N-L,1:L+1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: FR">[u,D,v]=3Dsvd(Y1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">[m,n]=3Dsize(D);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">% Determine the value =
+of<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>number of =
+exponentials.<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">nd=3Dmin(m,n);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">i=3D1;M=3D1;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: =
+FR">sigmamax=3DD(1,1);sigmac=3DD(2,2);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">while<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;=20
+</SPAN>((sigmac/sigmamax)&gt;1e-3)&amp;(i&lt;nd)<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>i=3Di+1;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; =
+</SPAN>sigmac=3DD(i,i);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>M=3Di-1;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">end<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">invD=3Dzeros(M,M);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">for =
+i=3D1:M,<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>invD(i,i)=3D1/D(i,i);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">end<o:p></o:p></P>
+<P class=3DMsoNormal=20
+style=3D"LINE-HEIGHT: =
+200%">vp=3Dv(1:n,1:M);up=3Du(1:m,1:M);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DFR=20
+style=3D"mso-ansi-language: =
+FR">Z=3DinvD*up'*Y2*vp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">z=3Deig(Z);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">s=3Dlog(z)/Ts;<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">alfa=3D-real(s);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">omega=3Dimag(s);<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">Z=3D[];<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">for =
+k=3D0:N-1,<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; =
+</SPAN>Z=3D[Z;((z.').^k)];<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">end<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: =
+200%">%RESIDUES<o:p></o:p></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%">R=3DZ\y.'; </P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoBodyText style=3D"TEXT-ALIGN: left" align=3Dleft><SPAN=20
+style=3D"mso-ansi-language: EN-US"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">function [b,a,mu] =3D=20
+mprony(y,t,p,bstart);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%MPRONY Fits a sum of exponential =
+functions to=20
+data by a modified Prony<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>method.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>B =3D MPRONY(Y,T,P) approximates Y(i) by a weighted sum of=20
+P<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>exponentials<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>sum_j=3D1^p=20
+A(j)*exp(B(j)*T(i)).<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>The =
+T(i)=20
+are<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>assumed equally spaced.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>B=20
+and A may be complex, although the<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>sum will be real if the data are.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Starting values for the B(i) are optional supplied=20
+by<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>MPRONY(Y,T,P,BSTART).<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>The=20
+A(i) and the fitted values are<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>optionally returned by [B,A,MU] =3D=20
+MPRONY(Y,T,P,BSTART).<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>References:<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Kahn, M., Mackisack, M. S., Osborne, M. R., and Smyth, G. K.=20
+(1992).<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>On the =
+consistency of=20
+Prony's method and related algorithms.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>J. Comput. =
+Graph.=20
+Statist., 1, 329-349.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Osborne, M. R., and Smyth, G. K. (1995). A modified Prony=20
+algorithm<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>for fitting =
+sums of=20
+exponential functions.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>SIAM J. Sci.=20
+Statist.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN><SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>Comput., 16,=20
+119-138.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>Gordon Smyth, U of Queensland, =
+gks@maths.uq.oz.au<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN=20
+style=3D"mso-tab-count: =
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>17 Dec 90.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Latest =
+revision=20
+29 Sep 95.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">[n cy]=3Dsize(y);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">dt=3Dt(2)-t(1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% form Y<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Y=3Dzeros(n-p,p+1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">i=3D1:(n-p);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">for j=3D1:p+1,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>Y(:,j)=3Dy(i+j-1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% starting values<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">if nargin &lt; 4,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>[x d]=3Deig(Y'*Y); [l jmin]=3Dmin(diag(d));=20
+c=3Dx(:,jmin);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">else<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>c=3Dpoly(exp(bstart*dt)); c=3Dc(:);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>c=3Dc(p+1:-1:1)/norm(c);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% form B<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% =
+X=3Dzeros(n,n-p);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">X=3Dsparse( [],[],[],n,n-p,(n-p)*(p+1)=20
+);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">for j=3D1:n-p,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>X(j:j+p,j)=3Dconj(c);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">MY=3D(X'*X)\Y;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">v=3DMY*c;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">V=3Dzeros(n,p+1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">for j=3D1:p+1,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>V(j:n-p+j-1,j)=3Dv;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">B=3D( Y'*MY-V'*V =
+)./(n-p);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% initial =
+eigenvalues<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">lold=3Dinf;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">[x d]=3Deig(B); [l jmin]=3Dmin(diag(d)); =
+
+c=3Dx(:,jmin);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">lfirst=3Dl;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">tol=3D10^(-15+log(n));<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">iter=3D0;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">while (abs((l-lold)/lfirst) &gt; 1e-5) =
+&amp;=20
+(rcond(B) &gt; tol) &amp; (iter&lt;40);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>iter=3Diter+1;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>if iter=3D=3D40;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>disp('MProny.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Max =
+iterations=20
+reached.');<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+</SPAN>form B<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>for j=3D1:n-p,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>X(j:j+p,j)=3Dconj(c);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>MY=3D(X'*X)\Y;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>v=3DMY*c;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>V=3Dzeros(n,p+1);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>for j=3D1:p+1,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN>V(j:n-p+j-1,j)=3Dv;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>B=3D( Y'*MY-V'*V )./(n-p);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">%<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+</SPAN>inverse iteration<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>lold=3Dl;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>[x d]=3Deig(B); [l jmin]=3Dmin(diag(d)); =
+c=3Dx(:,jmin);<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">% extract rate =
+constants<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">b=3Dlog(roots( c(p+1:-1:1)=20
+))/dt;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">if nargout &gt; 1,<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>A=3Dexp(t*b');<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>a=3DA\y;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: =
+yes">&nbsp;&nbsp;=20
+</SPAN>mu=3DA*a;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">end;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">EXAMPLE RUNS OF THE=20
+PROGRAM:<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: TR">Example =
+1:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function: cos(x)+ cos(2*x)+ cos(4*x)+=20
+cos(8*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Method: =
+GPOF<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">***Complex =
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[0] =3D 0.0 -j8.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[1] =3D 0.0 +j8.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[2] =3D 0.0 -j4.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[3] =3D 0.0 -j2.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[4] =3D 0.0 -j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[5] =3D 0.0 +j4.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[6] =3D 0.0 +j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[7] =3D 0.0 +j2.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[0] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[1] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[2] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[3] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[4] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[5] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[6] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[7] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example2:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function: cos(x)+ cos(2*x)+ cos(4*x)+=20
+cos(8*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:Prony<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">No of=20
+Exponentials:11<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">***Complex =
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[0] =3D -16.623266=20
+-j18.084541<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[1] =3D -16.623266=20
++j18.084541<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[2] =3D -29.461227=20
+-j31.415926<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[3] =3D 0.0 -j8.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[4] =3D 0.0 +j8.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[5] =3D 0.0 -j4.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[6] =3D 0.0 -j2.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[7] =3D 0.0 -j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[8] =3D 0.0 +j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[9] =3D 0.0 +j2.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[10] =3D 0.0 =
++j4.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[0] =3D 0.0 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[1] =3D 0.0 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[2] =3D 0.0 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[3] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[4] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[5] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[6] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[7] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[8] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[9] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[10] =3D 0.5 =
++j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example3:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function:sin(x)+ sin(3*x)+=20
+sin(7*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:Prony<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">No of =
+Exponentials:7<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:</SPAN></I></B><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">***Complex =
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[0] =3D -1.2558355=20
++j31.415926<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[1] =3D 0.0 +j7.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[2] =3D 0.0 +j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[3] =3D 0.0 +j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[4] =3D 0.0 -j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[5] =3D 0.0 -j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[6] =3D 0.0 -j7.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[0] =3D 0.0 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[1] =3D 0.0 -j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[2] =3D 0.0 -j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[3] =3D 0.0 -j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[4] =3D 0.0 +j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[5] =3D 0.0 +j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[6] =3D 0.0 +j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"TEXT-INDENT: 35.4pt; LINE-HEIGHT: =
+200%"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN style=3D"mso-spacerun: yes">&nbsp; =
+
+</SPAN><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example4:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function:sin(x)+ sin(3*x)+=20
+sin(7*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:GPOF<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:</SPAN></I></B><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">***Complex=20
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[0] =3D 0.0=20
+-j7.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[1] =3D 0.0=20
++j7.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[2] =3D 0.0=20
+-j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[3] =3D 0.0=20
+-j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[4] =3D 0.0=20
++j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[5] =3D 0.0=20
++j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[0] =3D 0.0=20
++j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[1] =3D 0.0=20
+-j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[2] =3D 0.0=20
++j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[3] =3D 0.0=20
++j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[4] =3D 0.0=20
+-j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[5] =3D 0.0=20
+-j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example5:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function:sin(x)+ cos(3*x)+=20
+sin(9*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:GPOF<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:</SPAN></I></B><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">***Complex=20
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[0] =3D =
+0.0=20
++j9.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[1] =3D =
+0.0=20
+-j9.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[2] =3D =
+0.0=20
++j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[3] =3D =
+0.0=20
++j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[4] =3D =
+0.0=20
+-j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">S[5] =3D =
+0.0=20
+-j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[0] =3D =
+0.0=20
+-j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[1] =3D =
+0.0=20
++j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[2] =3D =
+0.5=20
++j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[3] =3D =
+0.0=20
+-j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[4] =3D =
+0.0=20
++j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR; mso-bidi-font-style: italic">R[5] =3D =
+0.5=20
++j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example6:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Function:sin(x)+ cos(3*x)+=20
+sin(9*x)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Range:=20
+[0,10]<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Samples:101<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:Prony<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Number of=20
+Exponentials:6<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:</SPAN></I></B><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">***Complex =
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[0] =3D 0.0 -j9.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[1] =3D 0.0 -j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[2] =3D 0.0 -j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[3] =3D 0.0 +j1.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[4] =3D 0.0 +j3.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">S[5] =3D 0.0 +j9.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[0] =3D 0.0 +j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[1] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[2] =3D 0.0 +j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[3] =3D 0.0 -j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[4] =3D 0.5 +j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%; TEXT-ALIGN: =
+justify"><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">R[5] =3D 0.0 -j0.5<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><U><SPAN =
+lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Example7:<o:p></o:p></SPAN></U></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Function:exp(jx)<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Samples:<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">1<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">2<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">3<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">43<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">5<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">6<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">7<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">8<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">9<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">10<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Sampling Period: =
+1<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: =
+TR">Method:GPOF<o:p></o:p></SPAN></I></B></P>
+<P class=3DMsoNormal style=3D"LINE-HEIGHT: 200%"><B><I><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR">Outputs:</SPAN></I></B><SPAN lang=3DTR=20
+style=3D"mso-ansi-language: TR"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">***Complex=20
+Poles***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[0] =3D=20
+-0.20412043 -j3.7232028E-17<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[1] =3D -1.031164=20
++j1.5920029<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">S[2] =3D -1.031164=20
+-j1.5920029<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN>***Complex=20
+Residues***<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[0] =3D 26.65605=20
++j0.0<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[1] =3D -11.704902=20
++j32.226086<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR">R[2] =3D -11.704902=20
+-j32.226086<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: TR">As =
+seen from the=20
+examples the results are quite reasonable. Advantages and disadvantages =
+of using=20
+Prony&#8217;s Method or GPOF are generally known and discussed so its =
+upto the user to=20
+decide which of them to use.<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN lang=3DTR style=3D"mso-ansi-language: =
+TR"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P></DIV></BODY></=
+HTML>

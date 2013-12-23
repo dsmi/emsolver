@@ -1,0 +1,22 @@
+emsolver - suite of electromagnetic solvers
+===========================================
+
+This is a suite of moment-method solvers aimed at electromagnetic simulations written entirely in MATLAB. The main purpose is to illustrate the corresponding methods and allow easy experimentation - that is the reason for choosing MATLAB. (another reason is that MATLAB programming is funny) The code is mostly vectorized so the performance is reasonable.
+The solvers suite is being developed using GNU Octave although no Octave-specific features are used, at least intentionally. If you find something not working with MATLAB please be kind to report this.
+
+The suite includes 
+  (1) Laplace and Helmholtz equation solvers in two and three dimensions
+  (2) Full-wave electromagnetic solver in three dimensions using several different formulations:
+    - Using the perfect electric conductor (PEC) approximation: zero electric field inside of the conductor because of the perfect conductivity, EFIE (electric field integral equation) solved in the outer space with the boundary condition that the tangential component of the electric field is zero at the boundary of the conductor. 
+    - Using the PEC approximation as described above but also using surface impedance boundary condition to account for finite conductivity
+    - 'True' full-wave: electric field integral equation solved in the outer space and magnetic field integral equation solved inside the conductors. This way - solving the MFIE inside the conductors to model the current distribution - allows the solver to accurately predict the results of the skin-effect and the other effects which depend on the current distribution inside the conductor.
+  (3) Green's functions for the layered media which can be used by the aforementioned full-wave solvers.
+
+The solvers use the Rao-Wilton-Glisson basis functions. Given the boundary approximated by triangular mesh, the RWG basis is composed of functions associated with edges, the support of each of the functions is two triangles adjoining to the edge. Optionally the Loop-Star basis is used to address the low-frequency breakdown of the EFIE discretization. RWG basis functions are joined to form Loops which are divergence-free and represent the solenoidal part of the solution and Stars which represent the non-solenoidal remainder. 
+
+After obtaining the suite it makes sense to run unit-tests and regression tests. Unit tests can be run by invoking
+  emsolver/tests/run_tests.m
+And the regression tests can be run by invoking
+  emsolver/regressions/run_regressions.m
+
+A good starting point are the samples which can be found in emsolver/samples directory. Please also refer to the regression test simulations in emsolver/regressions which include some interesting tasks like evaluation of the input impedance of the dipole antenna. More two-dimensional simulation examples can be found in emsolver/mom2d/tests.

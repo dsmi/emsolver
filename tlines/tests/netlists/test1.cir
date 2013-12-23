@@ -1,0 +1,107 @@
+* Used to test values obtained from tlines calculator
+* The positive current direction through the current or voltage source is
+* from the positive (N1) node to the negative (N2) node.
+
+.option TUNING=VHIGH
+.option NUMDGT=6
+
+Rterm1 0 N1term 1.476824e-001
+Lterm1 N1term N1 6.771285e-009
+
+W_X1a N=1 N1 0 N11 0
++ RLGCmodel=X1_model L=2.0000e-004
+.MODEL X1_model W MODELTYPE=RLGC N=1
++ Ro=1.000000e+001
++ Lo=1.000000e-006
++ Go=5.000000e+002
++ Co=1.000000e-011
++ Rs=0
+
+Vtest11 N11 N11a AC 0
+
+W_X1b N=1 N11a 0 N2 0
++ RLGCmodel=X1_model L=8.0000e-004
+
+Vtest2 N2 N2a AC 0
+
+W_X2a N=1 N2a 0 N21 0
++ RLGCmodel=X2_model L=0.0028000
+.MODEL X2_model W MODELTYPE=RLGC N=1
++ Ro=5.000000e+000
++ Lo=1.500000e-006
++ Go=4.000000e+002
++ Co=3.000000e-011
++ Rs=0
+
+Vtest21 N21 N21a AC 0
+
+W_X2b N=1 N21a 0 N3 0
++ RLGCmodel=X2_model L=0.0012000
+
+Vtest3 N3 N3a AC 0
+
+W_X3a N=1 N3a 0 N31 0
++ RLGCmodel=X3_model L=4.0000e-005
+.MODEL X3_model W MODELTYPE=RLGC N=1
++ Ro=4.000000e+000
++ Lo=8.000000e-007
++ Go=5.000000e+001
++ Co=5.000000e-011
++ Rs=0
+
+Vsrc31 N31 N31a AC -1
+
+W_X3b N=1 N31a 0 N32 0
++ RLGCmodel=X3_model L=1.2000e-004
+
+Vtest32 N32 N32a AC 0
+
+W_X3c N=1 N32a 0 N33 0
++ RLGCmodel=X3_model L=1.60000e-004
+
+Vtest33 N33 N33a AC 0
+
+W_X3d N=1 N33a 0 N4 0
++ RLGCmodel=X3_model L=8.0000e-005
+
+Vtest4 N4 N4a AC 0
+
+W_X4a N=1 N4a 0 N41 0
++ RLGCmodel=X4_model L=0.0016000
+.MODEL X4_model W MODELTYPE=RLGC N=1
++ Ro=8.000000e+000
++ Lo=5.000000e-007
++ Go=1.000000e+002
++ Co=5.000000e-012
++ Rs=0
+
+Vtest41 N41 N41a AC 0
+
+W_X4b N=1 N41a 0 N5 0
++ RLGCmodel=X4_model L=4.0000e-004
+
+Vtest5 N5 N5a AC 0
+
+W_X5a N=1 N5a 0 N51 0
++ RLGCmodel=X5_model L=0.0012000
+.MODEL X5_model W MODELTYPE=RLGC N=1
++ Ro=3.000000e+000
++ Lo=1.000000e-007
++ Go=2.000000e+002
++ Co=4.000000e-011
++ Rs=0
+
+Vtest51 N51 N51a AC 0
+
+W_X5b N=1 N51a 0 N6 0
++ RLGCmodel=X5_model L=0.0048000
+
+Rterm6 N6 N6term 1.231370e-001
+Lterm6 N6term 0 2.030246e-009
+
+.ac list 1e6
+
+.print ac vr(N3)
+.print ac vi(N3)
+
+.end

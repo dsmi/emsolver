@@ -1,0 +1,11 @@
+file = S:/octave/impx/commons/data.txt
+grid = 100 x 100
+format = ascii
+interleaving = record
+majority = row
+field = locations, field0
+structure = 2-vector, 2-vector
+type = float, float
+dependency = positions, positions
+
+end

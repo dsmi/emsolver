@@ -1,0 +1,36 @@
+Tline parameters:
+width: 0.127
+thickness: 0.02
+above plane: 0.1
+Er: 4.7
+
+With dielectric:
+
+Inductance Matrix (H/m)
+-----------------------
+3.444768e-007 
+
+Capacitance Matrix (F/m)
+------------------------
+1.513048e-010
+
+top level w/o dielectric
+
+Inductance Matrix (H/m)
+-----------------------
+3.444721e-007 
+
+Capacitance Matrix (F/m)
+------------------------
+1.177754e-010  
+
+
+w/o dielectric:
+
+Inductance Matrix (H/m)
+-----------------------
+3.444664e-007 
+
+Capacitance Matrix (F/m)
+------------------------
+3.229971e-011 
