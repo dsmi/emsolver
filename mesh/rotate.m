@@ -16,13 +16,13 @@ s3 = sin(az);
 c3 = cos(az);
 
 m11 = c2.*c3;
-m12 = s1.*s2.*c3+c1.*s3;
-m13 = -c1.*s2.*c3+s1.*s3;
+m12 = c1.*s3 + c3.*s1.*s2;
+m13 = s1.*s3 - c1.*c3.*s2;
 m21 = -c2.*s3;
-m22 = -s1.*s2.*s3+c1.*c3;
-m23 = c1.*s2.*s3+s1.*c3;
+m22 = c1.*c3 - s1.*s2.*s3;
+m23 = c3.*s1 + c1.*s2.*s3;
 m31 = s2;
-m32 = -s1.*c2;
+m32 = -c2.*s1;
 m33 = c1.*c2;
 
 % Transform the vertices
