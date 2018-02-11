@@ -26,29 +26,29 @@ function [tri, x, y, z, c1, c2] = mkbox(sx, sy, sz, nx, ny, nz, panels)
 
 % Second panel perpendicular to Z axis
 [ pz2_tri, pz2_x, pz2_y, pz2_z ] = mkpanel(sx, sy, nx, ny);
-[ pz2_x, pz2_y, pz2_z ] = rotate(pz2_x, pz2_y, pz2_z, 0, pi, 0);
+[ pz2_x, pz2_y, pz2_z ] = rotmesh(pz2_x, pz2_y, pz2_z, 0, pi, 0);
 [ pz2_x, pz2_y, pz2_z ] = move(pz2_x, pz2_y, pz2_z, 0, 0, -sz/2);
 
 
 % First panel perpendicular to X axis
 [ px1_tri, px1_x, px1_y, px1_z ] = mkpanel(sz, sy, nz, ny);
-[ px1_x, px1_y, px1_z ] = rotate(px1_x, px1_y, px1_z, 0, pi/2, 0);
+[ px1_x, px1_y, px1_z ] = rotmesh(px1_x, px1_y, px1_z, 0, pi/2, 0);
 [ px1_x, px1_y, px1_z ] = move(px1_x, px1_y, px1_z, sx/2, 0, 0);
 
 % Second panel perpendicular to X axis
 [ px2_tri, px2_x, px2_y, px2_z ] = mkpanel(sz, sy, nz, ny);
-[ px2_x, px2_y, px2_z ] = rotate(px2_x, px2_y, px2_z, 0, -pi/2, 0);
+[ px2_x, px2_y, px2_z ] = rotmesh(px2_x, px2_y, px2_z, 0, -pi/2, 0);
 [ px2_x, px2_y, px2_z ] = move(px2_x, px2_y, px2_z, -sx/2, 0, 0);
 
 
 % First panel perpendicular to Y axis
 [ py1_tri, py1_x, py1_y, py1_z ] = mkpanel(sx, sz, nx, nz);
-[ py1_x, py1_y, py1_z ] = rotate(py1_x, py1_y, py1_z, -pi/2, 0, 0);
+[ py1_x, py1_y, py1_z ] = rotmesh(py1_x, py1_y, py1_z, -pi/2, 0, 0);
 [ py1_x, py1_y, py1_z ] = move(py1_x, py1_y, py1_z, 0, sy/2, 0);
 
 % Second panel perpendicular to Y axis
 [ py2_tri, py2_x, py2_y, py2_z ] = mkpanel(sx, sz, nx, nz);
-[ py2_x, py2_y, py2_z ] = rotate(py2_x, py2_y, py2_z, pi/2, 0, 0);
+[ py2_x, py2_y, py2_z ] = rotmesh(py2_x, py2_y, py2_z, pi/2, 0, 0);
 [ py2_x, py2_y, py2_z ] = move(py2_x, py2_y, py2_z, 0, -sy/2, 0);
 
 % Default value of the panels optional parameter

@@ -15,7 +15,7 @@ numz = 1;
 
 %tri = tri(c2,:);
 
-[x, y, z] = rotate(x,y,z,0.1,0,0);
+[x, y, z] = rotmesh(x,y,z,0.1,0,0);
 
 trimesh(tri, x, y, z);
 xlabel('X');

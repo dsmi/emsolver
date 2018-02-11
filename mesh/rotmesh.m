@@ -1,5 +1,5 @@
-function [nx, ny, nz] = rotate(x, y, z, ax, ay, az)
-% [nx, ny, nz] = rotate(x, y, z, ax, ay, az)
+function [nx, ny, nz] = rotmesh(x, y, z, ax, ay, az)
+% [nx, ny, nz] = rotmesh(x, y, z, ax, ay, az)
 %
 % Rotates the vertices. The rotation is defined in terms of Euler angles
 % using XYZ convention, it means that first the vertices are rotated about

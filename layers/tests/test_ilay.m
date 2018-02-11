@@ -17,7 +17,7 @@ gi = mkimages(lay);
 [ tri, x, y, z ] = mkbox(1e-3, 1.2e-3, 6e-4, 1, 1, 1);
 
 % Rotate it a little
-[ x, y, z ] = rotate(x, y, z, 0.1, 0.3, -0.2);
+[ x, y, z ] = rotmesh(x, y, z, 0.1, 0.3, -0.2);
 
 % Number of observation points/source triangles
 N = size(tri, 1);

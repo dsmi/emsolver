@@ -21,14 +21,14 @@ assertEquals(1, sqrt(mesh.nx.^2 + mesh.ny.^2 + mesh.nz.^2), 1e-10);
 rfind = (lc/2)*1.5;
 
 % Center of the first end of the loop
-[ cx1, cy1, cz1 ] = rotate(r, 0, 0, 0, ga/2, 0);
+[ cx1, cy1, cz1 ] = rotmesh(r, 0, 0, 0, ga/2, 0);
 % Normal of the first end of the loop
-[ nx1, ny1, nz1 ] = rotate(0, 0, 1, 0, ga/2, 0);
+[ nx1, ny1, nz1 ] = rotmesh(0, 0, 1, 0, ga/2, 0);
 
 % Center of the second end of the loop
-[ cx2, cy2, cz2 ] = rotate(r, 0, 0, 0, -ga/2, 0);
+[ cx2, cy2, cz2 ] = rotmesh(r, 0, 0, 0, -ga/2, 0);
 % Normal of the second end of the loop
-[ nx2, ny2, nz2 ] = rotate(0, 0, -1, 0, -ga/2, 0);
+[ nx2, ny2, nz2 ] = rotmesh(0, 0, -1, 0, -ga/2, 0);
 
 f1 = find_faces(mesh, cx1, cy1, cz1, nx1, ny1, nz1, rfind);
 f2 = find_faces(mesh, cx2, cy2, cz2, nx2, ny2, nz2, rfind);

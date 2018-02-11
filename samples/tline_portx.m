@@ -21,24 +21,24 @@ y2 = y2 + d/2;
 
 % Port extensions
 [ tri1, x1, y1, z1 ] = mkbox(d/4 - g/2, l/nl, t, 1, nx, nx);
-[x1, y1, z1] = rotate(x1, y1, z1, 0, 0, pi/2); % to get the triangles match
+[x1, y1, z1] = rotmesh(x1, y1, z1, 0, 0, pi/2); % to get the triangles match
 x1 = x1 + l/2 - l/nl/2;
 y1 = y1 + d/8 + g/4;
 
 [ tri2, x2, y2, z2 ] = mkbox(d/4 - g/2, l/nl, t, 1, nx, nx);
-[x2, y2, z2] = rotate(x2, y2, z2, 0, 0, pi/2); % to get the triangles match
+[x2, y2, z2] = rotmesh(x2, y2, z2, 0, 0, pi/2); % to get the triangles match
 x2 = x2 + l/2 - l/nl/2;
 y2 = y2 - d/8 - g/4;
 
 [ tri x y z ] = joinmeshes({ tri tri1 tri2 }, { x x1 x2 }, { y y1 y2 }, { z z1 z2 });
 
 [ tri1, x1, y1, z1 ] = mkbox(d/4 - g/2, l/nl, t, 1, nx, nx);
-[x1, y1, z1] = rotate(x1, y1, z1, 0, 0, pi/2); % to get the triangles match
+[x1, y1, z1] = rotmesh(x1, y1, z1, 0, 0, pi/2); % to get the triangles match
 x1 = x1 - l/2 + l/nl/2;
 y1 = y1 + d/8 + g/4;
 
 [ tri2, x2, y2, z2 ] = mkbox(d/4 - g/2, l/nl, t, 1, nx, nx);
-[x2, y2, z2] = rotate(x2, y2, z2, 0, 0, pi/2); % to get the triangles match
+[x2, y2, z2] = rotmesh(x2, y2, z2, 0, 0, pi/2); % to get the triangles match
 x2 = x2 - l/2 + l/nl/2;
 y2 = y2 - d/8 - g/4;
 

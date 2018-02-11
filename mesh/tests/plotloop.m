@@ -10,7 +10,7 @@ nr = 3;    % number of edges along the radius of the end discs
 ga = 0.1;  % opening angle of the gap
 [ tri, x, y, z ] = mkloop(r, rc, n, nc, nr, ga);
 
-% [x, y, z] = rotate(x,y,z,0.1,0,0);
+% [x, y, z] = rotmesh(x,y,z,0.1,0,0);
 
 trisurf(tri, x, y, z);
 %xlabel('X');

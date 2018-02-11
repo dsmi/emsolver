@@ -4,7 +4,7 @@ addpath("..");
 
 [ tri, x, y, z ] = mkring(1, 0.3, 20, 10);
 
-% [x, y, z] = rotate(x,y,z,0.1,0,0);
+% [x, y, z] = rotmesh(x,y,z,0.1,0,0);
 
 trisurf(tri, x, y, z);
 xlabel('X');

@@ -12,7 +12,7 @@ x = zeros_n1;
 y = (r/nr)*ones(1,n+1);
 z = zeros_n1;
 
-[ x, y, z ] = rotate(x, y, z, linspace(0, 2*pi, n+1), zeros_n1, zeros_n1);
+[ x, y, z ] = rotmesh(x, y, z, linspace(0, 2*pi, n+1), zeros_n1, zeros_n1);
 
 % Vertex at the center of the disc
 x(n+2) = 0;
@@ -28,9 +28,9 @@ tri = [ v1', v2', v3' ];
 if nr > 1,
     % The rest of the disc is made from a panel coiled around X axis
     [ ptri, px, py, pz ] = mkpanel(2*pi, (r/nr)*(nr-1), n, nr-1);
-    [ px, py, pz ] = rotate(px, py, pz, 0, pi/2, 0);
+    [ px, py, pz ] = rotmesh(px, py, pz, 0, pi/2, 0);
     [ px, py, pz ] = move(px, py, pz, 0, (r+r/nr)/2, 0);
-    [ px, py, pz ] = rotate(px, py, zeros(size(pz)), ...
+    [ px, py, pz ] = rotmesh(px, py, zeros(size(pz)), ...
 						   pz+pi, zeros(size(px)), zeros(size(px)));
 	
 	tri = [ tri; (ptri + length(x)) ];

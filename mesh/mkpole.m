@@ -15,7 +15,7 @@ function [tri, x, y, z] = mkpole(l, r, nl, n, nr)
 [ tri, x, y, z ] = mkpanel(l, 2*pi, nl, n);
 
 % Bend this panel around x. Minus is to get the normals looking outside.
-[ x, y, z ] = rotate(x, r*ones(size(y)), zeros(size(z)), ...
+[ x, y, z ] = rotmesh(x, r*ones(size(y)), zeros(size(z)), ...
                                -y+pi, zeros(size(y)), zeros(size(y)));
 
 % Add discs at the ends
@@ -29,7 +29,7 @@ z = [ z dz ];
 
 [ dtri, dx, dy, dz ] = mkdisc(r, n, nr);
 %dtri = [ dt(:,2) dt(:,1) dt(:,3) ]; % To get the correct orientation.
-[ dx, dy, dz ] = rotate(dx, dy, dz, 0, pi, 0);
+[ dx, dy, dz ] = rotmesh(dx, dy, dz, 0, pi, 0);
 [ dx, dy, dz ] = move(dx, dy, dz, -l/2, 0, 0);
 	
 tri = [ tri; (dtri + length(x)) ];
