@@ -64,9 +64,19 @@ end
 % This is the target funtion, so we need to integrate the
 % -1/(j*k)*exp(-j*k*R) along the triangle edges to obtain the target
 % surface integral value.
-integrand1 = exp(-j*k*aux.qR);
+
+% To handle k=0 case
+if k == 0
+    exp_jk = @(r) r;
+    invjk = 1;
+else
+    exp_jk = @(r) exp(-j*k*r);
+    invjk = -1/(j*k);
+end
+
+integrand1 = exp_jk(aux.qR);
 integral1 = sum(integrand1.*aux.qW,3).*(aux.s./2);
-fp_obs = -1/(j*k)*sum(aux.nu.*repmat(integral1, [ 1 1 3 ]), 2);
+fp_obs = invjk*sum(aux.nu.*repmat(integral1, [ 1 1 3 ]), 2);
 
 % Second part - includes the free vertex position. Can be written as:
 %   fp_x = x(l)*exp(-j*k*R)/R

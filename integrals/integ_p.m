@@ -65,10 +65,20 @@ end
 % normal has no Y component. The X component is constant and is equal to
 % the distance from the observation point to the line the edge lies on
 % (r2_minus_rho_dot_nu).
+
+% To handle k=0 case
+if k == 0
+    exp_jk = @(r) r;
+    invjk = 1;
+else
+    exp_jk = @(r) exp(-j*k*r);
+    invjk = -1/(j*k);
+end
+
 inv_q_rho_2 = 1./aux.q_rho_2;
-integranda = exp(-j*k*aux.qR).*inv_q_rho_2;
+integranda = exp_jk(aux.qR).*inv_q_rho_2;
 integrandb = -inv_q_rho_2;
 integrala = sum(aux.rho2line.*sum(integranda.*aux.qW,3).*(aux.s/2), 2);
-m = aux.cin.*exp(-j*k*aux.abs_h);
+m = aux.cin.*exp_jk(aux.abs_h);
 integralb = m.*sum(aux.rho2line.*sum(integrandb.*aux.qW,3).*(aux.s/2), 2);
-p = -1/(j*k)*(integrala+integralb);
+p = invjk*(integrala+integralb);
