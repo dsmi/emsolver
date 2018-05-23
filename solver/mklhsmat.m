@@ -68,6 +68,13 @@ Tt = T';
 %  [     RJ*T      0   RR     RP  ]
 %  [        0      0   PR     PP  ]
 
+% Magnetoquasi-static (MQS) approximation case:
+%  [  Tt*MJ*T  Tt*MM*T    0  Tt*MP  ] [ J ]   [ 0 ]
+%  [  Tt*JJ*T  Tt*JM*T    0      0  ] [ M ] = [ 0 ]
+%  [     RJ*T      0     RR     RP  ] [ R ] = [ C ]
+%  [        0      0     PR     PP  ] [ P ]   [ 0 ]  < this row removed
+%                         ^ this column removed
+
 % Number of loops
 nloops = size(IL,2);
 
@@ -144,17 +151,29 @@ MP = -Tt*mkphitstmat(mesh);
 
 % Relates the scalar potential (phi) and charge (rho), normalized
 % by division by freq.
-PR = 1/(4*pi*eps)*mkmommattri(mesh, opts.fintg_p_0, opts.mqo0, 1:ntris, 1:ntris)/freq;
+if (0 == soptget(opts, 'mqs', 0))
+    PR = 1/(4*pi*eps)*mkmommattri(mesh, opts.fintg_p_0, opts.mqo0, 1:ntris, 1:ntris)/freq;
+else
+    PR = zeros(0, 0);
+end
 
 % Diagonal matrix, scalar potential factor
-PP = -speye(ntris);
+if (0 == soptget(opts, 'mqs', 0))
+    PP = -eye(ntris);
+else
+    PP = zeros(0, ntris);
+end
 
 % relates div_s[nxH] and rho
 RJ = mkdivmat(mesh)*T;
 
 % Diagonal matrix, charge density factor. Notice that it is normalized
 % by division by freq, otherwise there is freq^2 in the numerator.
-RR = -speye(ntris)*freq*eps_c/conductivity;
+if (0 == soptget(opts, 'mqs', 0))
+    RR = -eye(ntris)*freq*eps_c/conductivity;
+else
+    RR = zeros(ntris, 0);
+end
 
 % Has nonzero terms only for contact polygons
 RP = zeros(ntris,ntris);
@@ -172,8 +191,10 @@ RP(sub2ind(size(RP), [ contacts{:} ], [ contacts{:} ])) = 1;
 % Now build the lhs matrix from the blocks.
 
 % Zero parts of the lhs matrix
-z1 = sparse(nedges,ntris);
-z2 = sparse(ntris,nedges);
+z1 = zeros(nedges,ntris);
+zr = zeros(nedges,ntris * (0 == soptget(opts, 'mqs', 0)));
+z2 = zeros(ntris,nedges);
+zp = zeros(ntris * (0 == soptget(opts, 'mqs', 0)),nedges);
 
 % Lefthand side matrix
 if soptget(opts, 'hf', 0),
@@ -181,8 +202,8 @@ if soptget(opts, 'hf', 0),
            RJ       RR    RP  ;   ... % R
            z2       PR    PP  ];      % P
 else
-    M = [  MJ    MM    z1    MP  ;   ... % J
-           JJ    JM    z1    z1  ;   ... % M
+    M = [  MJ    MM    zr    MP  ;   ... % J
+           JJ    JM    zr    z1  ;   ... % M
            RJ    z2    RR    RP  ;   ... % R
-           z2    z2    PR    PP  ];      % P
+           zp    zp    PR    PP  ];      % P
 end

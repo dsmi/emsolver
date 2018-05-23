@@ -1,9 +1,13 @@
-function sopt = init_solvopts(freq)
-% sopt = init_solvopts(freq)
+function sopt = init_solvopts(freq, mqs)
+% sopt = init_solvopts(freq, mqs)
 %
 % Returns the structure with the solver options initialized with default
 % values.
 %
+
+if ~exist('mqs')
+    mqs = 0;
+end
 
 sopt.freq = freq;
 sopt.eps = eps0;
@@ -11,6 +15,7 @@ sopt.mu = mu0;
 sopt.conductivity = 5.8e7; % Copper
 
 sopt.hf = 0;
+sopt.mqs = mqs;
 
 % Order of the quadrature used when evaluating integrals
 % over triangle of the testing edge.
@@ -18,7 +23,11 @@ sopt.mqo0 = 1;
 sopt.mqo1 = 1;
 
 % Wavenumber outside the conductors
-k = sopt.freq * sqrt(sopt.mu * sopt.eps);
+if mqs
+   k = 0;
+else
+   k = sopt.freq * sqrt(sopt.mu * sopt.eps);
+end
 
 % Permittivity of the conductors
 eps_c = (sopt.eps - j*sopt.conductivity/sopt.freq);

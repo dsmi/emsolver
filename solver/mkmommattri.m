@@ -14,7 +14,7 @@ nnt = length(nt);
 
 % If the matrix is big enough, it can not be computed at once because
 % of the memory limiations - it is computed by blocks instead.
-maxbls=400; % Maximum size of the block
+maxbls=200; % Maximum size of the block
 if nmt*nnt>maxbls*maxbls,
 
 	fprintf(1, 'Populating moment matrix');	

@@ -39,30 +39,27 @@ for i=1:length(contacts),
 end
 
 % The rest of the rhs vector, zeros.
-BE = zeros(nedges,1);
-BH = zeros(nedges,1);
-BP = zeros(ntris,1);
+BE = zeros(nedges, 1);
+BH = zeros(nedges * (0 == soptget(opts, 'hf', 0)), 1);
+BP = zeros(ntris * (0 == soptget(opts, 'mqs', 0)), 1);
 
-if soptget(opts, 'hf', 0),
-	B = [ BE; BR; BP ];
-else
-	B = [ BE; BH; BR; BP ];
-end
+% Assemble the rhs vector
+B = [ BE; BH; BR; BP ];
 
 % Solve the resulting linear system.
 X = M\B;
 
+% Numbers of unknowns
+nh = nedges; % electric currents
+ne = nedges * (0 == soptget(opts, 'hf', 0)); % magnetic currents if not hi-freq
+nr = ntris * (0 == soptget(opts, 'mqs', 0)); % charge density if not mqs
+np = ntris; % scalar potential
+
 % Disassemble unknowns vector to obtain the expansion coefficients.
-if soptget(opts, 'hf', 0),
-	XH = T*X(1:nedges);
-	XR = X(nedges+1:nedges+ntris);
-	XP = X(nedges+ntris+1:nedges+ntris*2);
-else
-	XH = T*X(1:nedges);
-	XE = T*X(nedges+1:nedges*2); % ! remove T if loop-star not used for nxE
-	XR = X(nedges*2+1:nedges*2+ntris);
-	XP = X(nedges*2+ntris+1:nedges*2+ntris*2);
-end
+XH = T*X(1:nh);
+XE = T*X(nh+1:nh+ne); % ! remove T if loop-star not used for nxE
+XR = X(nh+ne+1:nh+ne+nr);
+XP = X(nh+ne+nr+1:end);
 
 div_H = mkdivmat(mesh)*XH;
 

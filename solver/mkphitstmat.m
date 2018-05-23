@@ -23,11 +23,10 @@ M = size(mesh.edges,1);
 % Number of the triangles
 N = size(mesh.tri,1);
 
-%phitst = zeros(M,N);
-%idx = sub2ind(size(phitst), repmat((1:M)', 1, 2), mesh.edge_tris);
-%phitst(idx) = repmat( [ -1 1 ], M, 1).*repmat(mesh.edge_l, 1, 2);
+phitst = zeros(M,N);
+idx = sub2ind(size(phitst), repmat((1:M)', 1, 2), mesh.edge_tris);
+phitst(idx) = repmat( [ -1 1 ], M, 1).*repmat(mesh.edge_l, 1, 2);
 
-% The commented out code above genereates a dense matrix, this generates
-% sparse one.
-val = repmat( [ -1 1 ], M, 1).*repmat(mesh.edge_l, 1, 2);
-phitst = sparse(repmat((1:M)', 1, 2), mesh.edge_tris, val);
+%% % Code above genereates a dense matrix, this generates sparse one.
+%% val = repmat( [ -1 1 ], M, 1).*repmat(mesh.edge_l, 1, 2);
+%% phitst = sparse(repmat((1:M)', 1, 2), mesh.edge_tris, val);

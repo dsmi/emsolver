@@ -89,9 +89,9 @@ nl = nv - 1;
 m = repmat(edges, 1, 2);
 n = edge_verts_local;
 val = repmat([ 1 -1 ], ne, 1)./repmat(edge_l,1,2);
-%IL = zeros(nrows, nv);
-%IL(sub2ind(size(IL), m, n)) = val;
-IL = sparse(m, n, val, nrows, nv);
+IL = zeros(nrows, nv);
+IL(sub2ind(size(IL), m, n)) = val;
+%IL = sparse(m, n, val, nrows, nv);
 
 % Remove extra loops.
 IL(:,nl+1:end) = [];
@@ -180,7 +180,9 @@ if naddl > 0
 	m = edges(cycle_edges);
 	n = ones(size(cycle_edges));
 	val = cycle_edges_s./edge_l(cycle_edges);
-	il = sparse(m, n, val, nrows, 1);
+	il = zeros(nrows, 1);
+	il(sub2ind(size(il), m, n)) = val;
+	% il = sparse(m, n, val, nrows, 1);
 	IL = [ IL, il ];
 
     end
@@ -195,9 +197,9 @@ m = tri_edges;
 n = repmat((1:nt)', 1, 3);
 pn = [ 1 -1 ];
 val = pn(tri_edges_s)./mesh.edge_l(tri_edges);
-%IS = zeros(nrows, nt);
-%IS(sub2ind(size(IS), m, n)) = val;
-IS = sparse(m, n, val, nrows, nt);
+IS = zeros(nrows, nt);
+IS(sub2ind(size(IS), m, n)) = val;
+%% IS = sparse(m, n, val, nrows, nt);
 
 % Remove extra stars.
 IS(:,ns+1:end) = [];

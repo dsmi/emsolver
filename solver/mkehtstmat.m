@@ -67,24 +67,25 @@ fxn_dot_rho_lm2 = dot(fxn,rho_m,4).*lm/2;
 
 
 % This code generates dense matrix
-%ehtst = zeros(N);
+ehtst = zeros(N);
 % The loop is neccessary because of the overlapping of the matrix
 % elements for positive and negative triangles
-%for tri_s=1:2,
-%   n = edge_n(:,tri_s,:);   % Source edge
-%   idx = sub2ind(size(ehtst), repmat((1:N).', [ 1 1 3 ]), n);
-%   ehtst(idx) = ehtst(idx) + fxn_dot_rho_lm2(:,tri_s,:);
-%end
+for tri_s=1:2,
+  n = edge_n(:,tri_s,:);   % Source edge
+  idx = sub2ind(size(ehtst), repmat((1:N).', [ 1 1 3 ]), n);
+  ehtst(idx) = ehtst(idx) + fxn_dot_rho_lm2(:,tri_s,:);
+end
 
-n = edge_n(:,1,:);   % Source edge
-si = repmat((1:N)', [ 1 1 3 ]);
-sj = n;
-ss = fxn_dot_rho_lm2(:,1,:);
-ehtst1 = sparse(si(:), sj(:), ss(:));
+%% % Sparse matrix
+%% n = edge_n(:,1,:);   % Source edge
+%% si = repmat((1:N)', [ 1 1 3 ]);
+%% sj = n;
+%% ss = fxn_dot_rho_lm2(:,1,:);
+%% ehtst1 = sparse(si(:), sj(:), ss(:));
 
-n = edge_n(:,2,:);   % Source edge
-sj = n;
-ss = fxn_dot_rho_lm2(:,2,:);
-ehtst2 = sparse(si(:), sj(:), ss(:));
+%% n = edge_n(:,2,:);   % Source edge
+%% sj = n;
+%% ss = fxn_dot_rho_lm2(:,2,:);
+%% ehtst2 = sparse(si(:), sj(:), ss(:));
 
-ehtst = ehtst1 + ehtst2;
+%% ehtst = ehtst1 + ehtst2;

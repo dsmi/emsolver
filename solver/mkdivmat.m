@@ -22,10 +22,11 @@ M = size(mesh.tri,1);
 N = size(mesh.edges,1);
 
 % This code generates dense matrix
-%D = zeros(M,N);
-%idx1 = sub2ind(size(D), repmat((1:M)', 1, 3), mesh.tri_edges);
-%idx2 = sub2ind(size(mesh.edge_div), mesh.tri_edges, mesh.tri_edges_s);
-%D(idx1) = mesh.edge_div(idx2);
-
+D = zeros(M,N);
+idx1 = sub2ind(size(D), repmat((1:M)', 1, 3), mesh.tri_edges);
 idx2 = sub2ind(size(mesh.edge_div), mesh.tri_edges, mesh.tri_edges_s);
-D = sparse(repmat((1:M)', 1, 3), mesh.tri_edges, mesh.edge_div(idx2));
+D(idx1) = mesh.edge_div(idx2);
+
+%% % Sparse matrix
+%% idx2 = sub2ind(size(mesh.edge_div), mesh.tri_edges, mesh.tri_edges_s);
+%% D = sparse(repmat((1:M)', 1, 3), mesh.tri_edges, mesh.edge_div(idx2));
