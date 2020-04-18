@@ -49,4 +49,4 @@ for n=1:N,
    end
 end
 
-assertEquals(test_face_div,face_div);
+assertEquals(test_face_div,face_div,1e-14);

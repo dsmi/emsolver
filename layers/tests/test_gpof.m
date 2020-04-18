@@ -47,14 +47,12 @@ x1 = 0;  % Beginning of the interval
 x2 = 9;  % End of the interval
 dx = (x2-x1)/(ns - 1); % Sampling period
 x = linspace(x1, x2, ns);
-y = [ 1 2 3 43 5 6 7 8 9 10 ];
+y = sin(x/10);
 
 [s,b]=gpof(y,dx);
 
-s_test = [ -0.20412043-3.7232028E-17j; -1.031164+1.5920029j; -1.031164-1.5920029j ];
-b_test = [ 26.65605+0.0j; -11.704902+32.226086j; -11.704902-32.226086j ];
+yt = sum(repmat(b,1,ns).*exp(s*x),1);
 
-[ss, ix] = sort(s);
-[sts, ixt] = sort(s_test);
-assertEquals(s_test(ixt), s(ix), 1e-6);
-assertEquals(b_test(ixt), b(ix), 1e-6);
+yt = sum(repmat(b,1,ns).*exp(s*x),1);
+assertEquals(y, yt, 1e-11);
+

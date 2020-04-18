@@ -1,6 +1,8 @@
 function [s,b]=gpof(y,Ts)
 %GPOF MEthod.Ts represents the sampling period
 %N repseresnt number of samples
+% Finds the approximation of the following form:
+%  y = sum(repmat(b,1,ns).*exp(s*x),1);
 
 N=length(y);
 L=fix(N/2);
@@ -26,7 +28,7 @@ M=1;
 dd = diag(D);
 sigmamax=dd(1);
 sigmac=dd(2);
-while  ((sigmac/sigmamax)>1e-3)&(i<nd)
+while  ((sigmac/sigmamax)>1e-3)&&(i<nd)
    i=i+1;
    sigmac=dd(i);
    M=i-1;
