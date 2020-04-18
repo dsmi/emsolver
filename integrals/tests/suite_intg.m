@@ -7,6 +7,7 @@ addTest('test_integ_fp');
 addTest('test_integ_fp0');
 addTest('test_integ_fxg');
 addTest('test_integ_dp');
+addTest('test_integ_dp0');
 addTest('test_integ_tfxg');
 addTest('test_integ_fdn');
 addTest('test_integ_fxy');
