@@ -1,16 +1,24 @@
-function v = mkmommattri(mesh, integf, mqo, mt, nt)
-% v = mkmommattri(mesh, integf, mqo, mt, nt)
+function v = mkmommattri(mesh, integf, mqo, mt, nt, integpf)
+% v = mkmommattri(mesh, integf, mqo, mt, nt, integpf)
 %
 % Computes the moment matrix. Each element of the matrix m(m,n) is the
 % corresponding operator (as defined by integf) applied to the n-th expansion
 % basis function tested with respect to the m-th testing basis function.
 % The expansion and testing functions are piecewise constant ones associated
 % with triangles. Notice that the result omits 1/Am factor.
+% The optional integpf can be used to post-process the results of integf, it
+% receives the result of integf and the source and observation triangle
+% indices.
 %
 
 % Number of source and observation triangles.
 nmt = length(mt);
 nnt = length(nt);
+
+% Default post-integration function, does nothing
+if ~exist('integpf')
+	integpf = @( v, srct, obst ) ( v );
+end
 
 % If the matrix is big enough, it can not be computed at once because
 % of the memory limiations - it is computed by blocks instead.
@@ -34,7 +42,7 @@ if nmt*nnt>maxbls*maxbls,
 			bnt = nt(nstart:nend);
 			
 			% Calculate the subblock
-			vb = mkmommattri(mesh, integf, mqo, bmt, bnt);
+			vb = mkmommattri(mesh, integf, mqo, bmt, bnt, integpf);
 			
 			% And put it into the resulting matrix
 			v(mstart:mend,nstart:nend)=vb;
@@ -90,7 +98,9 @@ r = repmat(permute(r, [ 4 1 5 2 3 ]), [ nmt 1 nq ]);
 % array of size [ nmt nnt nq ]
 rr = reshape(r, [], 3, 3);
 robsr = reshape(robs, [], 3);
-intgr = integf(rr, robsr);
+srct = reshape( repmat( reshape( mt, [], 1  ), 1,   nnt, nq ), [], 1 );
+obst = reshape( repmat( reshape( nt,  1, [] ), nmt, 1  , nq ), [], 1 );
+intgr = integpf( integf( rr, robsr ), srct, obst );
 intg = reshape(intgr, nmt, nnt, nq);
 
 % Repmat and reshape qw so it has the same dimensions as intg

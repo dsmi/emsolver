@@ -11,3 +11,4 @@ addTest('test_ls_manyobj');
 addTest('test_edge_intg');
 addTest('test_mommat');
 addTest('test_shortgndz');
+addTest('test_mkmommattri2');

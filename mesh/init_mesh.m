@@ -7,6 +7,8 @@ function mesh = init_mesh(tri, x, y, z)
 % calling init_edges, and then calculates the triangle areas, triangle
 % centers, triangle normals, edge lengths and a number of other auxiliary
 % quantities.
+% If the particular solver works with triangles only and the edges are not
+% needed, refer to init_mesh_triangles.
 %
 %  Inputs: 
 %    tri   -   triangles, num_of_tri-by-3 array, three vertex indices for each
@@ -43,7 +45,7 @@ function mesh = init_mesh(tri, x, y, z)
 %              index of the vertex in triangle, second is the triangle index,
 %              third index is X-Y-Z.
 %    nx, ny, nz - triangle normals, normalized, column vector of length
-%              num_of_triangles.
+%              num_of_triangles. Oriented according to the right-hand rule.
 %    tri_a   - Triangle areas, column vector of length num_of_triangles.
 %    edge_l  - edge lengths, column vector of length num_of_edges.
 %    edge_tri_cx
@@ -73,10 +75,7 @@ function mesh = init_mesh(tri, x, y, z)
 %              number of the shapes.
 %
 
-mesh.tri = tri;
-mesh.x = x;
-mesh.y = y;
-mesh.z = z;
+mesh = init_mesh_triangles(tri, x, y, z);
 
 [ edges, etris, freev, freevl, trie, tries ] = init_edges(tri);
 mesh.edges = edges;
@@ -91,38 +90,6 @@ ntri = size(tri,1);
 
 % Number of the edges
 nedges = size(edges,1);
-
-% Triangle vertices
-tvx = x(tri);
-tvy = y(tri);
-tvz = z(tri);
-
-% Triangle centers
-mesh.cx = sum(tvx,2)/3;
-mesh.cy = sum(tvy,2)/3;
-mesh.cz = sum(tvz,2)/3;
-
-%  Vectors from a vertex to the center
-mesh.rc = cat(3, (repmat(mesh.cx, 1, 3) - tvx).', (repmat(mesh.cy, 1, 3) - tvy).', ...
-            (repmat(mesh.cz, 1, 3) - tvz).');
-
-% Compute the normals as the cross product of the edges
-edge12 = [ tvx(:,2) - tvx(:,1), tvy(:,2) - tvy(:,1), tvz(:,2) - tvz(:,1) ];
-edge23 = [ tvx(:,3) - tvx(:,2), tvy(:,3) - tvy(:,2), tvz(:,3) - tvz(:,2) ];
-normals = cross(edge12, edge23, 2);
-
-% Length of the normals.
-nl = sqrt(sum(normals.*normals,2));
-
-% Triangle area is equal to the half of the normal length.
-mesh.tri_a = nl/2;
-
-% Now normalize the normals
-normals = normals ./ repmat(nl, 1, 3);
-
-mesh.nx = normals(:,1);
-mesh.ny = normals(:,2);
-mesh.nz = normals(:,3);
 
 % Edge vertices
 evx = x(edges);
