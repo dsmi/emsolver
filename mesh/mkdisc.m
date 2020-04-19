@@ -43,7 +43,7 @@ else
     z = [ ];
 
     % Parameters of the rest of the disc
-    r1 = r0;
+    r1 = r - r0;
     nr1 = nr;
 end
 
