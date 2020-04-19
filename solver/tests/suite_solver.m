@@ -12,3 +12,6 @@ addTest('test_edge_intg');
 addTest('test_mommat');
 addTest('test_shortgndz');
 addTest('test_mkmommattri2');
+addTest('test_cperlen');
+addTest('test_spherec');
+addTest('test_disksc');

@@ -98,8 +98,8 @@ r = repmat(permute(r, [ 4 1 5 2 3 ]), [ nmt 1 nq ]);
 % array of size [ nmt nnt nq ]
 rr = reshape(r, [], 3, 3);
 robsr = reshape(robs, [], 3);
-srct = reshape( repmat( reshape( mt, [], 1  ), 1,   nnt, nq ), [], 1 );
-obst = reshape( repmat( reshape( nt,  1, [] ), nmt, 1  , nq ), [], 1 );
+obst = reshape( repmat( reshape( mt, [], 1  ), 1,   nnt, nq ), [], 1 );
+srct = reshape( repmat( reshape( nt,  1, [] ), nmt, 1  , nq ), [], 1 );
 intgr = integpf( integf( rr, robsr ), srct, obst );
 intg = reshape(intgr, nmt, nnt, nq);
 

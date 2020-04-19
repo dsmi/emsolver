@@ -38,8 +38,8 @@ fdot = @( dp, s, o ) ( dp(:,:,1).*nx(o) + dp(:,:,2).*ny(o) + dp(:,:,3).*nz(o) );
 % Test matrix
 E = mkmommattri( mesh, fintg_dp, 3, 1:N, 1:N, fdot );
 
-assertEquals(0.1,E(1,4),0.01);
-assertEquals(0.1,E(4,1),0.01);
+assertEquals(-0.1,E(1,4),0.01);
+assertEquals(-0.1,E(4,1),0.01);
 
 % Test if calculating submatrix of E works correctly. Column 2
 E2 = mkmommattri( mesh, fintg_dp, 3, 1:N, 2, fdot );
