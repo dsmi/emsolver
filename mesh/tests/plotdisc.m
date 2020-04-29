@@ -1,7 +1,7 @@
 
 addpath("..");
 
-[ tri, x, y, z ] = mkdisc(1, 6, 6, 0.5);
+[ tri, x, y, z ] = mkdisc(1, 6, 6, 0.8);
 
 %[x, y, z] = rotmesh(x,y,z,0.1,0,0);
 
