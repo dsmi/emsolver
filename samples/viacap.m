@@ -1,6 +1,5 @@
 %
-% Capacitnce of a (thick) pad above the ground plane, with the dielectric
-% interface.
+% Capacitnce of a simple pcb via.
 %
 %% C = 5.8529e-14
 %% L = 3.0055e-11
@@ -19,100 +18,94 @@ rp = 0.457e-3/2;   % pad radius
 rh = 0.639e-3/2;   % hole radius
 rg = rh*3;         % ground and dielectric radius
 rb = 0.267e-3/2;   % via radius
-h  = 91.44e-6;     % dieletric thickness
-pt = 60.96e-6;     % pad thickness
-gt = 30.48e-6;     % ground thickness
 epsd = 4.05*eps0;  % dielectric
 
-epsr = epsd/eps0;
-
-% Pad capacitance!
-Ca = epsd * pi * max( rp - rh, 0 )^2 / h
-Cf = 2*eps0*rp*(log(rp/(2*h)) + 1.41*epsr + 1.77 + h/rp*( 0.268*epsr + 1.65 ))
-Cp = Ca + Cf
+% Thickness of the layers
+h = [ 30.0 100.0 30.0 100.0 30.0 ]*1e-6;
 
 % Meshing -- edges along the pad radius
-n = 3;
+n = 1;
 
 % Given the size calculates the needed mesh resolution
 mres = @( s ) ceil( n*s/rp );
 
 % Number of edges around
-nr = max( 4, mres( 2*pi*rp/2 ) );
-
-% Number of metal-dielectric layer pairs
-numl = 3;
-
-% Metal and dielectric thickness
-ml = [ pt gt pt ];
-hl = [ h h ];
+nr = max( 4, mres( 2*pi*rp ) );
 
 % Start from the empty mesh
 tri = x = y = z = [ ];
 
-% This is to record the number of faces on each layer
-nltri = [ ];
+% This is to record the number of faces in each segment of the via mesh.
+% Pads are made of three segments, barrel is just one.
+nstri = [ ];
 
-% Create pad and barrel for a layer
-for lidx = 1:numl;
+for lidx = 1:length(h)
+
+    % Odd layer -- pad, even layer -- barrel
+    if rem( lidx, 2 )
+        r0 = rb * ( lidx > 1 );
+        r1 = rb * ( lidx < length(h) );
     
-    r0 = rb * (lidx > 1);
-    r1 = rb * (lidx < numl);
-    
-    % Upper disk
-    [ t1, x1, y1, z1 ] = mkdisc( rp, nr, mres( rp - r0 ), r0 );
+        % Upper disk
+        [ t1, x1, y1, z1 ] = mkdisc( rp, nr, mres( rp - r0 ), r0 );
+        x1 = x1 - sum( h(1:(lidx-1)) );
 
-    % Pad cylinder
-    [ t2, x2, y2, z2 ] = mktube( ml(lidx), rp, n, nr );
-    x2 = x2 - ml(lidx)/2;
+        % Pad cylinder
+        [ t2, x2, y2, z2 ] = mktube( h(lidx), rp, n, nr );
+        x2 = x2 - sum( h(1:(lidx-1)) ) - h(lidx)/2;
 
-    % Lower disk
-    [ t3, x3, y3, z3 ] = mkdisc( rp, nr, mres( rp - r1 ), r1 );
-    [ x3, y3, z3 ] = rotmesh( x3, y3, z3, 0, pi, 0 ); % to have outward normals
-    x3 = x3 - ml(lidx);
+        % Lower disk
+        [ t3, x3, y3, z3 ] = mkdisc( rp, nr, mres( rp - r1 ), r1 );
+        [ x3, y3, z3 ] = rotmesh( x3, y3, z3, 0, pi, 0 ); % to have outward normals
+        x3 = x3 - sum( h(1:lidx) );
 
-    % Barrel cylinder
-    if  lidx < numl
-        [ t4, x4, y4, z4 ] = mktube( hl(lidx), rb, n, nr );
-        x4 = x4 - ml(lidx) - hl(lidx)/2;
+        % Join the meshes
+        jt = { tri t1 t2 t3 };
+        jx = { x x1 x2 x3 };
+        jy = { y y1 y2 y3 };
+        jz = { z z1 z2 z3 };
+        [ tri x y z ] = joinmeshes( jt, jx, jy, jz );
+
+        % Record the triangle numbers to identify the conductor segments later.
+        nstri = [ nstri , size( t1, 1 ) , size( t2, 1 ) , size( t3, 1 ) ];
+        
     else
-        t4 = x4 = y4 = z4 = [ ];
+        % Barrel cylinder
+        [ t1, x1, y1, z1 ] = mktube( h(lidx), rb, mres( h(lidx) ), nr );
+        x1 = x1 - sum( h(1:(lidx-1)) ) - h(lidx)/2;
+
+        % Join the meshes
+        [ tri x y z ] = joinmeshes( { tri t1 }, { x x1 }, { y y1 }, { z z1 } );
+
+        % Record the triangle numbers to identify the conductor segments later.
+        nstri = [ nstri , size( t1, 1 ) ];
+        
     end
 
-    tlc = { t1 t2 t3 t4 };
-    xlc = { x1 x2 x3 x4 };
-    ylc = { y1 y2 y3 y4 };
-    zlc = { z1 z2 z3 z4 };
-    
-    [ tl xl yl zl ] = joinmeshes( tlc, xlc, ylc, zlc );
-    xl = xl - sum( ml( 1:(lidx-1) ) ) - sum( hl( 1:(lidx-1) ) );
-
-    [ tri x y z ] = joinmeshes( { tri tl }, { x xl }, { y yl }, { z zl } );
-
-    % Record the triangle numbers to identify the conductor segments later.
-    ntripad    = size( t1, 1 ) + size( t2, 1 ) + size( t3, 1 );
-    ntribarrel = size( t4, 1 );
-    nltri = [ nltri , ntripad , ntribarrel ];
-    
 end
 
-% Record the barrel and pad triangles -- we will use them later
+% Record the via barrel and pad triangles -- we will use them later
 [ t1, x1, y1, z1 ] = deal( tri, x, y, z );
     
 % Ground disk
-[ t2, x2, y2, z2 ] = mkpole( gt, rg, n, nr, mres( rg - rh ), rh );
-x2 = x2 - ml(1) - hl(1) - ml(2)/2;
+[ t2, x2, y2, z2 ] = deal( [ ], [ ], [ ], [ ] );
+for lidx = [ 3 ]
+    [ t0, x0, y0, z0 ] = mkpole( h(lidx), rg, n, nr, mres( rg - rh ), rh );
+    x0 = x0 - sum( h(1:(lidx-1) ) ) - h(lidx)/2;
+    [ t2 x2 y2 z2 ] = joinmeshes( { t2 t0 }, { x2 x0 }, { y2 y0 }, { z2 z0 } );
+end
+
 [ tri x y z ] = joinmeshes( { tri t2 }, { x x2 }, { y y2 }, { z z2 } );
 
 % Upper dielectric surface
 [ t3, x3, y3, z3 ] = mkdisc( rg, nr, mres( rg - rp ), rp );
 [ x3, y3, z3 ] = rotmesh( x3, y3, z3, 0, pi, 0 ); % we want normals pointing down
-x3 = x3 - ml( 1 );
+x3 = x3 - h( 1 );
 [ tri x y z ] = joinmeshes( { tri t3 }, { x x3 }, { y y3 }, { z z3 } );
 
 % Lower dielectric surface
 [ t4, x4, y4, z4 ] = mkdisc( rg, nr, mres( rg - rp ), rp );
-x4 = x4 - sum( ml( 1:2 ) ) - sum( hl( 1:2 ) );
+x4 = x4 - sum( h(1:end-1) );
 [ tri x y z ] = joinmeshes( { tri t4 }, { x x4 }, { y y4 }, { z z4 } );
 
 mesh = init_mesh_triangles( tri, x, y, z );
@@ -120,14 +113,14 @@ mesh = init_mesh_triangles( tri, x, y, z );
 ntris = size( tri,1 )
 
 % Ground faces
-gndf = ( sum( nltri ) + 1 ):( sum( nltri ) + size( t2, 1 ) );
+gndf = ( sum( nstri ) + 1 ):( sum( nstri ) + size( t2, 1 ) );
 
 % Dielectric faces
-dielf = ( sum( nltri ) + size( t2, 1 ) + 1 ):size( tri, 1 );
+dielf = ( sum( nstri ) + size( t2, 1 ) + 1 ):size( tri, 1 );
 
 % Ground is first. This will mater if we split the barrel.
 cnd1 = gndf;
-cnd2 = 1:sum( nltri );
+cnd2 = 1:sum( nstri );
 conductors = { cnd1 cnd2 };
 
 
@@ -136,8 +129,8 @@ epsout = eps0*ones( ntris, 1 );
 epsin  = eps0*ones( ntris, 1 );
 
 % find barrel and pads faces which are in the dielectric
-xd0 = -( sum( hl ) + sum( ml ) - ml( end )*0.999 ); % dielectric begins
-xd1 = -ml( 1 )*0.999;                               % dielectric ends
+xd0 = -( sum( h ) - h( end )*0.999 ); % dielectric begins
+xd1 = -h( 1 )*0.999;                  % dielectric ends
 rpb = rp*1.1;  % pad radius increased a bit to be used as the bound
 indielf = faces_in_box( t1, x, y, z, xd0, -rpb, -rpb, xd1, rpb, rpb );
 
@@ -156,36 +149,30 @@ C = cperlen(C2)
 %% csvwrite( 'q.txt', q );
 %% q = csvread('q.txt');
 
-%% % Absolute charge density to use in the plot
-%% aq = abs( q(:,1) );
+% Absolute charge density to use in the plot
+aq = abs( q(:,1) );
 
-%% % Vertex colors from the triangle change densities
-%% clr = x*0;
-%% for ti = 1:3
-%%     clr( tri(:,ti) ) = clr( tri(:,ti) ) + aq.'/3;
-%% end
-
-%% % Triangle colors to use in the plot
-%% tclr = aq;
+% Triangle colors to use in the plot
+tclr = aq;
 
 %% % Drop the dielecrtric triangles
 %% tri  = tri( cell2mat( conductors ), : );
 %% tclr = tclr( cell2mat( conductors ), : );
 
-%% h = trimesh(tri, x, y, z);
+%% hp = trimesh(tri, x, y, z);
 %% xlabel('X');
 %% ylabel('Y');
 %% zlabel('Z');
 
-%% set(h, 'FaceColor', 'flat', ...
+%% set(hp, 'FaceColor', 'flat', ...
 %%     'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
-%%     'EdgeColor', 'none' );
+%%     'EdgeColor', 'white' );
 
 %% colormap('jet')
 
 %% rlim = [ -rg*1.1 rg*1.1 ];
 %% %% xlim(rlim / 2);
-%% xlim( [ -( sum( hl ) + sum( ml ) + ml(1) ) ml(1) ] );
+%% xlim( [ -sum(h)*1.1 sum(h)*0.1 ] );
 %% ylim(rlim);
 %% zlim(rlim);
 
