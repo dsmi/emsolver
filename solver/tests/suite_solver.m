@@ -16,3 +16,4 @@ addTest('test_cperlen');
 addTest('test_spherec');
 addTest('test_disksc');
 addTest('test_loop_mqs');
+addTest('test_chainy');
