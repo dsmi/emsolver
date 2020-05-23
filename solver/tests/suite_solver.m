@@ -15,3 +15,4 @@ addTest('test_mkmommattri2');
 addTest('test_cperlen');
 addTest('test_spherec');
 addTest('test_disksc');
+addTest('test_loop_mqs');
