@@ -26,7 +26,7 @@ h = [ 30.0 100.0 30.0 100.0 30.0 ]*1e-6;
 rosaind = @( l, r ) 2*l*1.0e-7.*(log(2*l./r)-(1.00));
 
 % Meshing -- edges along the pad radius
-n = 2;
+n = 1;
 
 % Number of edges around
 nr = 12;
@@ -116,47 +116,38 @@ ltri = cumsum( nstri );
 
 % Here we identify the contact faces on the edge of the pads
 f1 = ltri(1)+1:ltri(2); % faces forming the outer surface of pad1
+f2 = ltri(5)+1:ltri(6); % faces forming the outer surface of pad2
 f3 = ltri(9)+1:ltri(10); % faces forming the outer surface of pad3
-c1 = f1( 1:2 );      % Square panel formed by a pair of triangles
-c2 = f3( nr+1:nr+2  );
+c1 = f1( [ 1:2 ] );      % Square panel formed by a pair of triangles
+c2 = f3( [ nr+1:nr+2] );
 
 contacts = { c1 c2 };
 
-% Solve is done here
-freq = 2*pi*1.0e6
-k = freq * sqrt(mu0 * eps0);
-wavelen = 2*pi/k
+freq = 1e14; % affects losses, and the matrix conditioning
 
-% Solver options
-opts = init_solvopts( freq, 1 );
-opts.mqo0 = 3;
-opts.mqo1 = 3;
-sopt.nqn0 = 3;
-sopt.nqn1 = 3;
+Y2 = solve_mqs( mesh, contacts, freq );
+Y = chainy( Y2 );
 
-Y2 = solve_y(mesh, contacts, opts);
-L = real(1/(j*freq*Y2(1,1))) % inductance
+L = real(1/(j*freq*Y)) % inductance
 
-%% Lrp = rosaind( l, rb )
+% Triangle colors to use in the plot
+tclr = zeros( ntris, 1 );
+tclr( c1 ) = 1;
+tclr( c2 ) = 2;
 
-%% % Triangle colors to use in the plot
-%% tclr = zeros( ntris, 1 );
-%% tclr( c1 ) = 1;
-%% tclr( c2 ) = 2;
+h = trisurf(tri, x, y, z);
+xlabel('X');
+ylabel('Y');
+zlabel('Z');
 
-%% h = trisurf(tri, x, y, z);
-%% xlabel('X');
-%% ylabel('Y');
-%% zlabel('Z');
+set(h, 'FaceColor', 'flat', ...
+    'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
+    'EdgeColor', 'white' );
 
-%% set(h, 'FaceColor', 'flat', ...
-%%     'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
-%%     'EdgeColor', 'white' );
+%% colormap('jet')
 
-%% %% colormap('jet')
-
-%% rlim = [ -rg*1.1 rg*1.1 ];
-%% xlim(rlim);
-%% %% xlim( [ -( sum( hl ) + sum( ml ) + ml(1) ) ml(1) ] );
-%% ylim(rlim);
-%% zlim(rlim);
+rlim = [ -rg*1.1 rg*1.1 ];
+xlim(rlim);
+%% xlim( [ -( sum( hl ) + sum( ml ) + ml(1) ) ml(1) ] );
+ylim(rlim);
+zlim(rlim);

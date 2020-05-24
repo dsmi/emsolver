@@ -7,8 +7,9 @@
 %%   C = 5.7712e-14
 %%   L = 1.8216e-11
 %%
-%% ViaCap with n = 7
-%%   C = 1.2878e-13
+%% Lp = 1.821e-10
+%% Cp1 = 5.1226e-14
+%% Cp2 = 5.1226e-14
 %%
 
 addpath(genpath([ pwd, '/..' ]));
@@ -16,7 +17,7 @@ addpath(genpath([ pwd, '/..' ]));
 %
 rp = 0.457e-3/2;   % pad radius
 rh = 0.639e-3/2;   % hole radius
-rg = rh*3;         % ground and dielectric radius
+rg = rh*4;         % ground and dielectric radius
 rb = 0.267e-3/2;   % via radius
 epsd = 4.05*eps0;  % dielectric
 
@@ -27,10 +28,10 @@ h = [ 30.0 100.0 30.0 100.0 30.0 ]*1e-6;
 n = 1;
 
 % Given the size calculates the needed mesh resolution
-mres = @( s ) ceil( n*s/rp );
+mres = @( s ) min( 1, ceil( n*s/rp ) );
 
 % Number of edges around
-nr = max( 4, mres( 2*pi*rp ) );
+nr = 6;
 
 % Start from the empty mesh
 tri = x = y = z = [ ];
@@ -123,7 +124,6 @@ cnd1 = gndf;
 cnd2 = 1:sum( nstri );
 conductors = { cnd1 cnd2 };
 
-
 % Dielecric permeabilities in and out
 epsout = eps0*ones( ntris, 1 );
 epsin  = eps0*ones( ntris, 1 );
@@ -155,27 +155,26 @@ aq = abs( q(:,1) );
 % Triangle colors to use in the plot
 tclr = aq;
 
-%% % Drop the dielecrtric triangles
-%% tri  = tri( cell2mat( conductors ), : );
-%% tclr = tclr( cell2mat( conductors ), : );
+% Drop the dielecrtric triangles
+tri  = tri( cell2mat( conductors ), : );
+tclr = tclr( cell2mat( conductors ), : );
 
-%% hp = trimesh(tri, x, y, z);
-%% xlabel('X');
-%% ylabel('Y');
-%% zlabel('Z');
+hp = trisurf(tri, x, y, z);
+xlabel('X');
+ylabel('Y');
+zlabel('Z');
 
-%% set(hp, 'FaceColor', 'flat', ...
-%%     'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
-%%     'EdgeColor', 'white' );
+set(hp, 'FaceColor', 'flat', ...
+    'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
+    'EdgeColor', 'white' );
 
-%% colormap('jet')
+colormap('jet')
 
-%% rlim = [ -rg*1.1 rg*1.1 ];
-%% %% xlim(rlim / 2);
+rlim = [ -rg*1.1 rg*1.1 ];
+xlim(rlim / 2);
 %% xlim( [ -sum(h)*1.1 sum(h)*0.1 ] );
-%% ylim(rlim);
-%% zlim(rlim);
-
+ylim(rlim);
+zlim(rlim);
 
 %% c = x*0;
 %% c( tri(dielt,1) ) = 1;
