@@ -1,5 +1,5 @@
-function Y = solve_mqs(mesh, contacts, freq)
-% Y = solve_mqs(mesh, contacts, freq)
+function [ Y xj xp ] = solve_mqs(mesh, contacts, freq)
+% [ Y xj xp ] = solve_mqs(mesh, contacts, freq)
 %
 % Given a system of conductors with N terminals, this function calculates
 % the admittance matrix Y under the magneto quasi static approximation, which
@@ -63,6 +63,9 @@ x = A\b;
 
 % Get the unknown sufrace current expansion coefficients
 xj = x(1:nedges,:);
+
+% And the found potentials
+xp = x(nedges+1:end,:);
 
 % Divergence of the surface current gives the current flow into the contact!
 divj = mkdivmat(mesh)*xj;
