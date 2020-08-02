@@ -26,7 +26,7 @@ h = [ 30.0 100.0 30.0 100.0 30.0 ]*1e-6;
 rosaind = @( l, r ) 2*l*1.0e-7.*(log(2*l./r)-(1.00));
 
 % Meshing -- edges along the pad radius
-n = 1;
+n = 2;
 
 % Number of edges around
 nr = 12;
@@ -125,29 +125,46 @@ contacts = { c1 c2 };
 
 freq = 1e14; % affects losses, and the matrix conditioning
 
-Y2 = solve_mqs( mesh, contacts, freq );
+[ Y2 xj xp ] = solve_mqs( mesh, contacts, freq );
 Y = chainy( Y2 );
 
 L = real(1/(j*freq*Y)) % inductance
 
-% Triangle colors to use in the plot
-tclr = zeros( ntris, 1 );
-tclr( c1 ) = 1;
-tclr( c2 ) = 2;
+% Uncomment below to plot currents
 
-h = trisurf(tri, x, y, z);
-xlabel('X');
-ylabel('Y');
-zlabel('Z');
+%% % Currents at the triangle centers
+%% triv = calc_triv( mesh, xj(:,1) );
 
-set(h, 'FaceColor', 'flat', ...
-    'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
-    'EdgeColor', 'white' );
+%% % Triangle colors to use in the plot
+%% tclr = zeros( ntris, 1 );
+%% tclr( c1 ) = 1;
+%% tclr( c2 ) = 2;
+%% %% tclr = abs( xp(:,1) );
+
+%% % Triangle colors to use in the plot -- current density
+%% tclr = sqrt( sum( power( imag(triv), 2 ), 2 ) );
+
+%% hl = trisurf(tri, y, z, x);
+%% xlabel('Y');
+%% ylabel('Z');
+%% zlabel('X');
+
+%% set(hl, 'FaceColor', 'flat', ...
+%%     'FaceVertexCData', tclr, 'CDataMapping','scaled', ...
+%%     'EdgeColor', 'white' );
+
+%% hold on;
+
+%% ns = 0.000003;
+%% quiver3( mesh.cy + mesh.ny*ns, mesh.cz + mesh.nz*ns, mesh.cx + mesh.nx*ns, ...
+%%          imag(triv(:,2)), imag(triv(:,3)), imag(triv(:,1)), ...
+%%          'linewidth', 2, 'color',[0.8 0.1 0.1], 'AutoScaleFactor', 5.0 );
+
+%% hold off;
 
 %% colormap('jet')
 
-rlim = [ -rg*1.1 rg*1.1 ];
-xlim(rlim);
-%% xlim( [ -( sum( hl ) + sum( ml ) + ml(1) ) ml(1) ] );
-ylim(rlim);
-zlim(rlim);
+%% rlim = [ -rp*1.2 rp*1.2 ];
+%% xlim(rlim);
+%% ylim(rlim);
+%% zlim( [ -sum( h )*1.2 sum( h )*0.2 ] );
