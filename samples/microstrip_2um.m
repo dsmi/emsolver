@@ -10,9 +10,10 @@ s = 1.0; % scale factor for experiments
 w = 2e-6*s; % width
 t = 2e-6*s; % thickness, both trace and ground
 h = 2e-6*s; % height above ground
-l = 8e-4*s; % Length
+m = 20; % length multiplier
+l = 8e-4/m*s; % Length
 u = 2e-6*5*s; % Ground width
-nl = 50;  % number of segments along the tline
+nl = 20;  % number of segments along the tline
 nw = 3;   % segments along width
 nt = 3;   % segments along thickness
 nu = 3*5; % segments along ground
@@ -46,7 +47,7 @@ contacts = { c1 c2 c3 c4 };
 %% zlim(rlim);
 
 % Frequency samples
-freqs = 2*pi*linspace(0,2e10,3);
+freqs = 2*pi*linspace(0,2e10,21);
 freqs(1) = 1.0e6;
 
 % Simulation results
@@ -62,10 +63,13 @@ for freq=freqs,
     % Solver options
     opts = init_solvopts( freq );
     
+    
     Y4 = solve_y( mesh, contacts, opts ); % four-port admittance
     Z2 = shortgndz( inv(Y4) ) % two-port impedance
+    A = z2a( Z2 );
+    Y = a2y( A^m ); % finally, Y-params of the needed length
 
-    Yf = cat( 3, Yf, inv(Z2) );
+    Yf = cat( 3, Yf, Y );
 
     tswrite( 'microstrip_2um_3d.y2p', freqs/(2*pi), Yf );
     
