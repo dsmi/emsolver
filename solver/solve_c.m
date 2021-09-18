@@ -46,8 +46,11 @@ BP = zeros(ntris * (0 == soptget(opts, 'mqs', 0)), 1);
 % Assemble the rhs vector
 B = [ BE; BH; BR; BP ];
 
+% Row scaling matrix
+R = diag(sum(abs(M),2));
+
 % Solve the resulting linear system.
-X = M\B;
+X = (R\M)\(R\B);
 
 % Numbers of unknowns
 nh = nedges; % electric currents

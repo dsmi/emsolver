@@ -24,7 +24,7 @@ N = length(ne);
 
 % If the matrix is big enough, it can not be computed at once because
 % of the memory limiations - it is computed by blocks instead.
-maxbls=300; % Maximum size of the block
+maxbls=200; % Maximum size of the block
 if M*N>maxbls*maxbls,
 
 	fprintf(1, 'Populating moment matrix');	
@@ -49,10 +49,10 @@ if M*N>maxbls*maxbls,
 			% And put it into the resulting matrix
 			v(mstart:mend,nstart:nend)=vb;
 			
-			fprintf(1, '.');
+			%fprintf(1, '.');
 		end
 		
-		fprintf(1, '%.0f%%', mend*100/M);
+		fprintf(1, '.%.0f%%', mend*100/M);
 	end
 
 	fprintf(1, '\n');

@@ -47,10 +47,10 @@ if nmt*nnt>maxbls*maxbls,
 			% And put it into the resulting matrix
 			v(mstart:mend,nstart:nend)=vb;
 			
-			fprintf(1, '.');
+			%fprintf(1, '.');
 		end
 		
-		fprintf(1, '%.0f%%', mend*100/nmt);
+		fprintf(1, '.%.0f%%', mend*100/nmt);
 	end
 
 	fprintf(1, '\n');
