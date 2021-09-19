@@ -11,16 +11,19 @@ t = 2e-6; % thickness, both trace and ground
 h = 2e-6; % height above ground
 m = 10; % length multiplier
 l = 8e-4/m; % Length
-u = 2e-6*5; % Ground width
-nl = 30;  % number of segments along the tline
+u = 2e-6*20; % Ground width
+nl = 20;  % number of segments along the tline
 nw = 3;   % segments along width
 nt = 3;   % segments along thickness
-nu = 2*5; % segments along ground
+nu = 17;  % segments along ground
 ng = 2;   % segments along thickness in the ground
 
 [ tri1, x1, y1, z1 ] = mkbox(l, w, t, nl, nw, nt);
 z1 = z1 + (t+h)/2;
-[ tri2, x2, y2, z2 ] = mkbox(l, u, t, nl, nu, ng);
+
+[ tri2, x2, y2, z2 ] = mkbox(l, nu, t, nl, nu, ng);
+b = 1.5;
+y2 = sign(y2).*power(b,abs(y2))./power(b,nu/2)*u/2;
 z2 = z2 - (t+h)/2;
 
 [ tri x y z ] = joinmeshes({ tri1 tri2 }, { x1 x2 }, { y1 y2 }, { z1 z2 });
@@ -47,7 +50,7 @@ contacts = { c1 c2 c3 c4 };
 %% zlim(rlim);
 
 % Frequency samples
-freqs = 2*pi*linspace(0,2e10,21);
+freqs = 2*pi*linspace(0,2e10,3);
 freqs(1) = 1.0e6;
 
 % Simulation results
