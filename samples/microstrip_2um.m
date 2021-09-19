@@ -6,21 +6,21 @@
 addpath(genpath([ pwd, '/..' ]))
 
 % The source primitive - bar above ground
-s = 1.0; % scale factor for experiments
-w = 2e-6*s; % width
-t = 2e-6*s; % thickness, both trace and ground
-h = 2e-6*s; % height above ground
-m = 20; % length multiplier
-l = 8e-4/m*s; % Length
-u = 2e-6*5*s; % Ground width
-nl = 20;  % number of segments along the tline
+w = 2e-6; % width
+t = 2e-6; % thickness, both trace and ground
+h = 2e-6; % height above ground
+m = 10; % length multiplier
+l = 8e-4/m; % Length
+u = 2e-6*5; % Ground width
+nl = 30;  % number of segments along the tline
 nw = 3;   % segments along width
 nt = 3;   % segments along thickness
-nu = 3*5; % segments along ground
+nu = 2*5; % segments along ground
+ng = 2;   % segments along thickness in the ground
 
 [ tri1, x1, y1, z1 ] = mkbox(l, w, t, nl, nw, nt);
 z1 = z1 + (t+h)/2;
-[ tri2, x2, y2, z2 ] = mkbox(l, u, t, nl, nu, nt);
+[ tri2, x2, y2, z2 ] = mkbox(l, u, t, nl, nu, ng);
 z2 = z2 - (t+h)/2;
 
 [ tri x y z ] = joinmeshes({ tri1 tri2 }, { x1 x2 }, { y1 y2 }, { z1 z2 });
@@ -68,10 +68,10 @@ for freq=freqs,
     Z2 = shortgndz( inv(Y4) ) % two-port impedance
     A = z2a( Z2 );
     Y = a2y( A^m ); % finally, Y-params of the needed length
+    %% Y = inv( Z2 );
 
     Yf = cat( 3, Yf, Y );
 
     tswrite( 'microstrip_2um_3d.y2p', freqs/(2*pi), Yf );
     
 end
-
